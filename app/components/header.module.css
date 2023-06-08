@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'PyeongChangPeace-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PyeongChangPeace-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media screen and (min-width: 1024px){
+  .root{
+    background: #dddddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title{
+    line-height: 50px;
+  }
+  
+  
+  .nav ul{
+    display: flex;
+  }
+  
+  .nav li{
+    display: block;
+  }
+  
+  .nav a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+  
+  }
+
+  .opener {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .root{
+    background: #dddddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title{
+    line-height: 50px;
+  }
+  
+  .nav {
+    width: 300px;
+    height: calc(100vh - 70px);
+    position: absolute;
+    right: -300px;
+    top: 70px;
+    background: salmon;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav ul{
+    display: block;
+  }
+  
+  .nav li{
+    display: block;
+  }
+  
+  .nav a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+  
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .opener {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  .first {
+    width: 40px;
+    height: 4px;
+    right: 10px;
+    top: 14px;
+    position: absolute;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+
+  .firstX {
+    top: 27px;
+    position: absolute;
+    background-color: black;
+    transform: rotate(-45deg);
+  }
+
+  .second {
+    width: 40px;
+    height: 4px;
+    right: 10px;
+    top: 28px;
+    position: absolute;
+    background-color: black;
+    opacity: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .secondX {
+    opacity: 0;
+  }
+
+  .third {
+    width: 40px;
+    height: 4px;
+    right: 10px;
+    top: 42px;
+    position: absolute;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+  
+  .thirdX {
+    top: 27px;
+    position: absolute;
+    background-color: black;
+    transform: rotate(45deg);
+  }
+}
