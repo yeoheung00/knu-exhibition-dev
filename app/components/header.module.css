@@ -108,11 +108,16 @@
   .nav {
     width: 300px;
     height: calc(100vh - 70px);
+    right: 0;
     position: absolute;
-    right: -300px;
+    transform: translateX(300px);
     top: 70px;
     background: salmon;
     transition: 0.3s ease-in-out;
+  }
+
+  .nav.active {
+    transform: translateX(0);
   }
 
   .nav ul {
@@ -133,10 +138,6 @@
     text-decoration: none;
     color: black;
 
-  }
-
-  .nav.active {
-    right: 0;
   }
 
   .opener {
