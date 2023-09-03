@@ -15,7 +15,6 @@
 @media screen and (min-width: 1240px) {
   .root {
     overflow: hidden;
-    background: #dddddd;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -23,10 +22,10 @@
 
   .title {
     line-height: 50px;
+    margin-left: 20px;
   }
 
   .nav ul {
-    background-color: aqua;
     display: flex;
   }
 
@@ -48,6 +47,11 @@
 
   .opener {
     display: none;
+  }
+
+  .current a {
+    color: magenta;
+    font-weight: bold;
   }
 }
 
@@ -61,7 +65,6 @@
   .root {
     overflow: hidden;
     width: 100vw;
-    background: #dddddd;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -72,7 +75,6 @@
   }
 
   .nav ul{
-    background-color: aqua;
     display: flex;
   }
 
@@ -94,6 +96,12 @@
 
   .opener {
     display: none;
+  }
+
+
+  .current a {
+    color: magenta;
+    font-weight: bold;
   }
 }
 
@@ -108,7 +116,6 @@
     width: 100vw;
     height: 60px;
     overflow: hidden;
-    background: #dddddd;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -119,7 +126,7 @@
   }
 
   .nav {
-    top: 60px;
+    top: 0;
     right: 0;
     position: absolute;
     overflow: hidden;
@@ -133,8 +140,9 @@
   .nav ul {
     display: block;
     width: 300px;
-    height: calc(100vh - 60px);
-    background-color: aqua;
+    height: 100vh;
+    padding-top: 10px;
+    backdrop-filter: blur(50px);
     transform: translateX(300px);
     transition: 0.3s ease-in-out;
   }
@@ -211,5 +219,10 @@
     position: absolute;
     background-color: black;
     transform: rotate(45deg);
+  }
+
+  .current a {
+    color: magenta;
+    font-weight: bold;
   }
 }

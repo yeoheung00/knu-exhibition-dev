@@ -1,16 +1,71 @@
 
 @media screen and (min-width: 1240px){
   .root{
-    background-color: red;
+  }
+
+  .title{
+    position: absolute;
+    font-size: 200px;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  .image{
+    max-width: 100vw;
+    height: 80vh;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: -2;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1240px){
   .root{
-    background-color: green;
+  }
+
+  .title{
+    position: absolute;
+    font-size: 15vw;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    z-index: -1;
+  }
+
+  .image{
+    max-width: 100vw;
+    height: 80vh;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: -2;
   }
 }
 @media screen and (max-width: 767px){
   .root{
-    background-color: blue;
+  }
+
+  .title{
+    position: absolute;
+    font-size: 20vw;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    z-index: -1;
+  }
+
+
+  .image{
+    max-width: 100vw;
+    max-height: 80vh;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: -2;
   }
 }

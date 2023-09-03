@@ -17,13 +17,13 @@ export default function Header(){
   }
   return(
     <div className={styles.root}>
-      <h1 className={styles.title}>{pathname}</h1>
+      <h1 className={styles.title}>{pathname==""?"":"PIECE OF CAKE"}</h1>
       <nav className={`${styles.nav} ${isOpen?styles.active:null}`}>
         <ul>
-          <li><Link onClick={close} href="/">Home</Link></li>
-          <li><Link onClick={close} href="/about">About</Link></li>
-          <li><Link onClick={close} href="/profile">Profile</Link></li>
-          <li><Link onClick={close} href="/gallery">Gallery</Link></li>
+          <li className={`${pathname==""?styles.current:null}`}><Link onClick={close} href="/">Home</Link></li>
+          <li className={`${pathname=="about"?styles.current:null}`}><Link onClick={close} href="/about">About</Link></li>
+          <li className={`${pathname=="profile"?styles.current:null}`}><Link onClick={close} href="/profile">Profile</Link></li>
+          <li className={`${pathname=="gallery"?styles.current:null}`}><Link onClick={close} href="/gallery">Gallery</Link></li>
         </ul>
       </nav>
       <div className={styles.opener} onClick={open}>
