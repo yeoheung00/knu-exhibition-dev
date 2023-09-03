@@ -25,16 +25,19 @@
     line-height: 50px;
   }
 
+  .nav {
+    background-color: aqua;
+  }
 
-  .nav ul {
+  .drawer {
     display: flex;
   }
 
-  .nav li {
+  .drawer li {
     display: block;
   }
 
-  .nav a {
+  .drawer a {
     display: block;
     text-align: center;
     line-height: 50px;
@@ -65,16 +68,20 @@
     line-height: 50px;
   }
 
+  .nav {
+    background-color: aqua;
+  }
 
-  .nav ul {
+
+  .drawer {
     display: flex;
   }
 
-  .nav li {
+  .drawer li {
     display: block;
   }
 
-  .nav a {
+  .drawer a {
     display: block;
     text-align: center;
     line-height: 50px;
@@ -94,6 +101,7 @@
 @media screen and (max-width: 767px) {
   .root {
     width: 100vw;
+    height: 70px;
     overflow: hidden;
     background: #dddddd;
     padding: 10px;
@@ -108,6 +116,16 @@
   .nav {
     width: 300px;
     height: calc(100vh - 70px);
+    top: 70px;
+    right: 0;
+    overflow: hidden;
+    background-color: aqua;
+    position: absolute;
+  }
+
+  .drawer{
+    width: 300px;
+    height: calc(100vh - 70px);
     right: 0;
     position: absolute;
     transform: translateX(300px);
@@ -116,7 +134,7 @@
     transition: 0.3s ease-in-out;
   }
 
-  .nav.active {
+  .drawer.active {
     transform: translateX(0);
   }
 

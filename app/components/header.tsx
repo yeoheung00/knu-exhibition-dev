@@ -18,8 +18,8 @@ export default function Header(){
   return(
     <div className={styles.root}>
       <h1 className={styles.title}>{pathname}</h1>
-      <nav className={`${styles.nav} ${isOpen?styles.active:null}`}>
-        <ul>
+      <nav className={styles.nav}>
+        <ul className={`${styles.drawer} ${isOpen?styles.active:null}`}>
           <li><Link onClick={close} href="/">Home</Link></li>
           <li><Link onClick={close} href="/about">About</Link></li>
           <li><Link onClick={close} href="/profile">Profile</Link></li>
