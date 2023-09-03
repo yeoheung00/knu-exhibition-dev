@@ -119,22 +119,24 @@
   }
 
   .nav {
-    width: 300px;
-    height: calc(100vh - 60px);
     top: 60px;
     right: 0;
-    background-color: aqua;
     position: absolute;
-    transform: translateX(300px);
-    transition: 0.3s ease-in-out;
+    overflow: hidden;
   }
 
-  .nav.active {
+
+  .nav.active ul{
     transform: translateX(0);
   }
 
   .nav ul {
     display: block;
+    width: 300px;
+    height: calc(100vh - 60px);
+    background-color: aqua;
+    transform: translateX(300px);
+    transition: 0.3s ease-in-out;
   }
 
   .nav li {
