@@ -12,28 +12,29 @@
   font-style: italic;
 }
 
-@media screen and (min-width: 1024px){
-  .root{
+@media screen and (min-width: 1240px) {
+  .root {
+    overflow: hidden;
     background: #dddddd;
     padding: 10px;
     display: flex;
     justify-content: space-between;
   }
-  
-  .title{
+
+  .title {
     line-height: 50px;
   }
-  
-  
-  .nav ul{
+
+
+  .nav ul {
     display: flex;
   }
-  
-  .nav li{
+
+  .nav li {
     display: block;
   }
-  
-  .nav a{
+
+  .nav a {
     display: block;
     text-align: center;
     line-height: 50px;
@@ -42,7 +43,7 @@
     height: 50px;
     text-decoration: none;
     color: black;
-  
+
   }
 
   .opener {
@@ -50,18 +51,59 @@
   }
 }
 
-@media screen and (max-width: 1023px){
-  .root{
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .root {
+    overflow: hidden;
+    width: 100vw;
     background: #dddddd;
     padding: 10px;
     display: flex;
     justify-content: space-between;
   }
-  
-  .title{
+
+  .title {
     line-height: 50px;
   }
-  
+
+
+  .nav ul {
+    display: flex;
+  }
+
+  .nav li {
+    display: block;
+  }
+
+  .nav a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+
+  }
+
+  .opener {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .root {
+    overflow: hidden;
+    background: #dddddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title {
+    line-height: 50px;
+  }
+
   .nav {
     width: 300px;
     height: calc(100vh - 70px);
@@ -71,16 +113,16 @@
     background: salmon;
     transition: 0.3s ease-in-out;
   }
-  
-  .nav ul{
+
+  .nav ul {
     display: block;
   }
-  
-  .nav li{
+
+  .nav li {
     display: block;
   }
-  
-  .nav a{
+
+  .nav a {
     display: block;
     text-align: center;
     line-height: 50px;
@@ -89,7 +131,7 @@
     height: 50px;
     text-decoration: none;
     color: black;
-  
+
   }
 
   .nav.active {
@@ -146,7 +188,7 @@
     background-color: black;
     transition: all 0.3s ease;
   }
-  
+
   .thirdX {
     top: 27px;
     position: absolute;
