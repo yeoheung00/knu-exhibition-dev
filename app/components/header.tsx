@@ -3,8 +3,10 @@
 import Link from "next/link";
 import styles from "./header.module.css";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header(){
+  const pathname = usePathname().split("/")[1];
   const [isOpen, setIsOpen] = useState(false);
   const open = () => {
     setIsOpen((current) => !current);
@@ -15,7 +17,7 @@ export default function Header(){
   }
   return(
     <div className={styles.root}>
-      <h1 className={styles.title}>Piece Piece Piece</h1>
+      <h1 className={styles.title}>{pathname}</h1>
       <nav className={`${styles.nav} ${isOpen?styles.active:null}`}>
         <ul>
           <li><Link onClick={close} href="/">Home</Link></li>
