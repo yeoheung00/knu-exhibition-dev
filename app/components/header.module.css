@@ -16,7 +16,7 @@
   .root {
     overflow: hidden;
     background: #dddddd;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
   }
@@ -25,19 +25,16 @@
     line-height: 50px;
   }
 
-  .nav {
+  .nav ul {
     background-color: aqua;
-  }
-
-  .drawer {
     display: flex;
   }
 
-  .drawer li {
+  .nav li {
     display: block;
   }
 
-  .drawer a {
+  .nav a {
     display: block;
     text-align: center;
     line-height: 50px;
@@ -53,13 +50,19 @@
     display: none;
   }
 }
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1239px) {
   .root {
     overflow: hidden;
     width: 100vw;
     background: #dddddd;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
   }
@@ -68,20 +71,16 @@
     line-height: 50px;
   }
 
-  .nav {
+  .nav ul{
     background-color: aqua;
-  }
-
-
-  .drawer {
     display: flex;
   }
 
-  .drawer li {
+  .nav li {
     display: block;
   }
 
-  .drawer a {
+  .nav a {
     display: block;
     text-align: center;
     line-height: 50px;
@@ -98,13 +97,19 @@
   }
 }
 
+
+
+
+
+
+
 @media screen and (max-width: 767px) {
   .root {
     width: 100vw;
-    height: 70px;
+    height: 60px;
     overflow: hidden;
     background: #dddddd;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
   }
@@ -115,26 +120,16 @@
 
   .nav {
     width: 300px;
-    height: calc(100vh - 70px);
-    top: 70px;
+    height: calc(100vh - 60px);
+    top: 60px;
     right: 0;
-    overflow: hidden;
     background-color: aqua;
     position: absolute;
-  }
-
-  .drawer{
-    width: 300px;
-    height: calc(100vh - 70px);
-    right: 0;
-    position: absolute;
     transform: translateX(300px);
-    top: 70px;
-    background: salmon;
     transition: 0.3s ease-in-out;
   }
 
-  .drawer.active {
+  .nav.active {
     transform: translateX(0);
   }
 
@@ -160,35 +155,35 @@
 
   .opener {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     right: 5px;
     top: 5px;
   }
 
   .first {
-    width: 40px;
+    width: 30px;
     height: 4px;
     right: 10px;
-    top: 14px;
+    top: 12px;
     position: absolute;
     background-color: black;
     transition: all 0.3s ease;
   }
 
   .firstX {
-    top: 27px;
+    top: 23px;
     position: absolute;
     background-color: black;
     transform: rotate(-45deg);
   }
 
   .second {
-    width: 40px;
+    width: 30px;
     height: 4px;
     right: 10px;
-    top: 28px;
+    top: 23px;
     position: absolute;
     background-color: black;
     opacity: 100%;
@@ -200,17 +195,17 @@
   }
 
   .third {
-    width: 40px;
+    width: 30px;
     height: 4px;
     right: 10px;
-    top: 42px;
+    top: 34px;
     position: absolute;
     background-color: black;
     transition: all 0.3s ease;
   }
 
   .thirdX {
-    top: 27px;
+    top: 23px;
     position: absolute;
     background-color: black;
     transform: rotate(45deg);
