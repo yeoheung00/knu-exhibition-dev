@@ -1,0 +1,25 @@
+.root{
+  padding-top: 60px;
+}
+
+.title{
+  background-color: magenta;
+  padding: 100px 100px;
+}
+
+.concept_head{
+  padding: 50px 100px;
+}
+
+.concept_article{
+  padding: 0 100px;
+  display: flex;
+}
+
+.concept_article img{
+  width: 30%;
+}
+
+.concept_article p{
+  margin-left: 100px;
+}

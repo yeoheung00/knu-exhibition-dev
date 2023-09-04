@@ -1,5 +1,4 @@
 import styles from './page.module.css'
-import image from '../public/asset01.png'
 
 export default function Home() {
   return (

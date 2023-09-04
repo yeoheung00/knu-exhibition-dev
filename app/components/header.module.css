@@ -14,15 +14,22 @@
 
 @media screen and (min-width: 1240px) {
   .root {
+    position: fixed;
+    width: 100vw;
     overflow: hidden;
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
   }
 
   .title {
     line-height: 50px;
     margin-left: 20px;
+  }
+
+  .index{
+    display: none;
   }
 
   .nav ul {
@@ -64,6 +71,7 @@
 @media screen and (min-width: 768px) and (max-width: 1239px) {
   .root {
     overflow: hidden;
+    position: fixed;
     width: 100vw;
     padding: 5px;
     display: flex;
@@ -72,6 +80,11 @@
 
   .title {
     line-height: 50px;
+    margin-left: 20px;
+  }
+
+  .index{
+    display: none;
   }
 
   .nav ul{
@@ -113,6 +126,7 @@
 
 @media screen and (max-width: 767px) {
   .root {
+    position: fixed;
     width: 100vw;
     height: 60px;
     overflow: hidden;
@@ -122,16 +136,27 @@
   }
 
   .title {
+    display: none;
+  }
+
+
+  .index{
     line-height: 50px;
+    margin-left: 10px;
   }
 
   .nav {
     top: 0;
     right: 0;
+    width: 0;
     position: absolute;
     overflow: hidden;
+    transition: 0.3s ease-in-out;
   }
 
+  .nav.active{
+    width: 300px;
+  }
 
   .nav.active ul{
     transform: translateX(0);
@@ -153,7 +178,8 @@
 
   .nav a {
     display: block;
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
     line-height: 50px;
     font-size: 20px;
     width: 120px;
