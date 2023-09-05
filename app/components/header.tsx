@@ -40,7 +40,7 @@ export default function Header(){
         </div>
 
         <ul>
-          <li className={`${pathname==""?styles.current:null}`}><Link onClick={()=>{close(); dropup();}} href="/">Main</Link></li>
+          <li className={`${pathname=="/"?styles.current:null}`}><Link onClick={()=>{close(); dropup();}} href="/">Main</Link></li>
           <li className={`${pathname=="/aboutpage"?styles.current:null}`}><Link onClick={()=>{close(); dropup();}} href="/aboutpage">About</Link></li>
           <li className={`${pathname=="/projectpage"?styles.current:null}`}><Link onClick={dropdown} href={pathname}>Project</Link></li>
           <div className={`${styles.dropdown} ${isDrop?styles.active:null}`}>

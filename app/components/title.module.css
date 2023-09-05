@@ -1,0 +1,10 @@
+.root{
+  display: flex;
+  color: #E85087;
+  margin-bottom: 50px;
+}
+.box{
+  flex: 1 0 auto;
+  background-color: #E85087;
+  margin-left: 20px;
+}

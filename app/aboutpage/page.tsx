@@ -1,14 +1,38 @@
 import styles from './about.module.css'
+import Title from '../components/title'
 
 export default function About(){
   return(
     <div className={styles.root}>
-      <h1 className={styles.title}>2023년도<br/>공주대학교 디자인컨버전스학과<br/>16회 졸업전시</h1>
-      <h2 className={styles.concept_head}>전시 컨셉</h2>
-      <div className={styles.concept_article}>
-        <img src='poster.jpeg' alt='poster'/>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div className={styles.article}>
+        <Title title={<h2>PIECE<br/>OF<br/>CAKE</h2>}/>
+        <p>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다. 인생의 쓸쓸한 뼈 불어 피어나는 어디 힘있다. 사랑의 뜨거운지라, 풍부하게 소리다.이것은 것이다. 너의 풍부하게 트고, 동력은 전인 예수는 오직 교향악이다. 고동을 있는 우리 역사를 되는 풍부하게 찾아다녀도, 인간에 같지 끓는다. 풀밭에 그들을 있으며, 돋고, 노래하며 바이며, 싹이 인류의 꽃 이것이다. 앞이 가는 동력은 얼음이 가치를 수 얼음에 있으랴? 가장 스며들어 트고, 사랑의 안고, 대한 이 것이다.</p>
+        <p>그러므로 천지는 쓸쓸한 아름다우냐? 얼음과 용기가 위하여 같이, 대한 청춘 희망의 뿐이다. 가치를 석가는 위하여, 보이는 힘차게 아름다우냐? 같이, 이것이야말로 기쁘며, 인간에 불어 인간이 새가 있는가? 만천하의 튼튼하며, 웅대한 방황하여도, 예수는 대중을 공자는 가장 것이다. 끝까지 황금시대를 대고, 위하여서. 찾아다녀도, 그들은 피어나는 보는 있을 놀이 웅대한 철환하였는가? 같은 실현에 피고 아름다우냐? 석가는 그것을 미인을 얼마나 얼음과 때문이다.</p>
+        <p>눈에 인류의 전인 피어나기 끓는 청춘이 끓는 힘있다. 이는 보는 것이다.보라, 바이며, 굳세게 피어나는 위하여, 안고, 만물은 약동하다. 그들의 우리의 아름답고 구하지 것이다. 생의 충분히 인생을 능히 불어 황금시대다. 스며들어 찾아 못하다 듣기만 우리의 것이다. 위하여 같은 것은 뛰노는 목숨이 싹이 이성은 뜨거운지라, 발휘하기 때문이다. 과실이 황금시대를 꾸며 평화스러운 청춘의 고행을 미묘한 있으랴? 무엇이 위하여, 오아이스도 그들은 황금시대를 고동을 과실이 것이다. 그들을 뛰노는 얼마나 뭇 인간이 것이다. 바로 우리의 풀이 것이다.</p>
       </div>
+
+      <div className={styles.article}>
+        <Title title={<h2>졸업준비위원회</h2>}/>
+        <h3>인테리어</h3>
+        <p>민경원, 김수지, 최현정, 구진욱</p>
+        <h3>도록</h3>
+        <p>민경원, 김수지, 최현정, 구진욱</p>
+        <h3>웹</h3>
+        <p>민경원, 김수지, 최현정, 구진욱</p>
+        <h3>포스터</h3>
+        <p>민경원, 김수지, 최현정, 구진욱</p>
+      </div>
+
+      <div className={styles.article}>
+        <Title title={<h2>전시일정</h2>}/>
+        <h3>일시</h3>
+        <p>2023. 12. 7. ~ 2023. 12. 11.</p>
+        <h3>장소</h3>
+        <p>충청남도 천안시 천안대로 1223-24<br/>국립공주대학교 천안캠퍼스 10공학관 1층</p>
+        <div className={styles.map}/>
+      </div>
+
+
     </div>
   )
 }

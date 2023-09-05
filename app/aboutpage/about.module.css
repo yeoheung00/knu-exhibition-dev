@@ -3,23 +3,30 @@
 }
 
 .title{
-  background-color: magenta;
-  padding: 100px 100px;
-}
-
-.concept_head{
-  padding: 50px 100px;
-}
-
-.concept_article{
-  padding: 0 100px;
   display: flex;
 }
 
-.concept_article img{
-  width: 30%;
+.title h2{
+  color: #E85087;
+  margin-right: 20px;
 }
 
-.concept_article p{
-  margin-left: 100px;
+.titlebox{
+  background-color: #E85087;
+  flex: 1 0 auto
+}
+
+.article{
+  padding: 50px 20px;
+  color: #E85087;
+}
+
+.article p{
+  margin: 10px 0 50px 0;
+}
+
+.map{
+  width: calc(100vw - 40px);
+  height: calc(100vw - 20px);
+  background-color: #E85087;
 }

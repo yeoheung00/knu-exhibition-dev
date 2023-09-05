@@ -57,7 +57,7 @@
   }
 
   .current a {
-    color: magenta;
+    color: #6C21BB !important;
     font-weight: bold;
   }
 }
@@ -113,7 +113,7 @@
 
 
   .current a {
-    color: aqua;
+    color: #6C21BB !important;
     font-weight: bold;
   }
 }
@@ -131,6 +131,8 @@
     height: 60px;
     padding: 5px;
     display: flex;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.4);
     justify-content: space-between;
   }
 
@@ -138,6 +140,44 @@
     line-height: 50px;
     margin-left: 10px;
     color: #E85087;
+  }
+
+  .opener {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+
+  .first {
+    width: 30px;
+    height: 4px;
+    right: 10px;
+    top: 12px;
+    position: absolute;
+    background-color: #E85087;
+    transition: all 0.3s ease;
+  }
+
+  .second {
+    width: 30px;
+    height: 4px;
+    right: 10px;
+    top: 23px;
+    position: absolute;
+    background-color: #E85087;
+    opacity: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .third {
+    width: 30px;
+    height: 4px;
+    right: 10px;
+    top: 34px;
+    position: absolute;
+    background-color: #E85087;
+    transition: all 0.3s ease;
   }
 
   .nav {
@@ -193,7 +233,7 @@
   .nav li {
     display: block;
     text-align: left;
-    margin-left: 20px;
+    padding-left: 20px;
     line-height: 50px;
     font-size: 20px;
     width: 120px;
@@ -238,47 +278,8 @@
     color: #E85087;
   }
 
-
-  .opener {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: relative;
-  }
-
-  .first {
-    width: 30px;
-    height: 4px;
-    right: 10px;
-    top: 12px;
-    position: absolute;
-    background-color: #E85087;
-    transition: all 0.3s ease;
-  }
-
-  .second {
-    width: 30px;
-    height: 4px;
-    right: 10px;
-    top: 23px;
-    position: absolute;
-    background-color: #E85087;
-    opacity: 100%;
-    transition: all 0.3s ease;
-  }
-
-  .third {
-    width: 30px;
-    height: 4px;
-    right: 10px;
-    top: 34px;
-    position: absolute;
-    background-color: #E85087;
-    transition: all 0.3s ease;
-  }
-
   .current a {
-    color: aqua !important;
+    color: #6C21BB !important;
     font-weight: bold;
   }
 }
