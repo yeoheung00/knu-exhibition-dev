@@ -113,7 +113,7 @@
 
 
   .current a {
-    color: magenta;
+    color: aqua;
     font-weight: bold;
   }
 }
@@ -135,13 +135,9 @@
   }
 
   .title {
-    display: none;
-  }
-
-
-  .index{
     line-height: 50px;
     margin-left: 10px;
+    color: #E85087;
   }
 
   .nav {
@@ -152,31 +148,49 @@
     position: absolute;
     overflow: hidden;
     transition: 0.3s ease-in-out;
+    background-color: #E85087;
   }
 
   .nav.active{
     width: 300px;
   }
 
-  .nav.active ul{
-    transform: translateX(0);
+  .closer {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: relative;
+  }
+
+  .firstX {
+    width: 30px;
+    height: 4px;
+    left: 10px;
+    top: 23px;
+    position: relative;
+    background-color: white;
+    transform: rotate(45deg);
+  }
+
+  .secondX {
+    width: 30px;
+    height: 4px;
+    left: 10px;
+    top: 19px;
+    position: relative;
+    background-color: white;
+    transform: rotate(135deg);
   }
 
   .nav ul {
     display: block;
     width: 300px;
     height: 100vh;
-    padding-top: 10px;
-    backdrop-filter: blur(50px);
-    transform: translateX(300px);
-    transition: 0.3s ease-in-out;
   }
 
   .nav li {
-    display: block;
-  }
-
-  .nav a {
     display: block;
     text-align: left;
     margin-left: 20px;
@@ -185,17 +199,51 @@
     width: 120px;
     height: 50px;
     text-decoration: none;
-    color: black;
+    color: white;
+  }
+
+  .nav li a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav .sns {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .dropdown{
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
 
   }
+
+  .dropdown.active{
+    height: 200px;
+  }
+
+  .dropdown ul{
+    padding: 0;
+    height: fit-content; 
+    background-color: white;
+  }
+
+  .dropdown ul li{
+    line-height: 50px;
+    width: 300px;
+  }
+
+  .dropdown ul li a{
+    color: #E85087;
+  }
+
 
   .opener {
     display: block;
     width: 50px;
     height: 50px;
-    position: absolute;
-    right: 5px;
-    top: 5px;
+    position: relative;
   }
 
   .first {
@@ -204,15 +252,8 @@
     right: 10px;
     top: 12px;
     position: absolute;
-    background-color: black;
+    background-color: #E85087;
     transition: all 0.3s ease;
-  }
-
-  .firstX {
-    top: 23px;
-    position: absolute;
-    background-color: black;
-    transform: rotate(-45deg);
   }
 
   .second {
@@ -221,13 +262,9 @@
     right: 10px;
     top: 23px;
     position: absolute;
-    background-color: black;
+    background-color: #E85087;
     opacity: 100%;
     transition: all 0.3s ease;
-  }
-
-  .secondX {
-    opacity: 0;
   }
 
   .third {
@@ -236,19 +273,12 @@
     right: 10px;
     top: 34px;
     position: absolute;
-    background-color: black;
+    background-color: #E85087;
     transition: all 0.3s ease;
   }
 
-  .thirdX {
-    top: 23px;
-    position: absolute;
-    background-color: black;
-    transform: rotate(45deg);
-  }
-
   .current a {
-    color: magenta;
+    color: aqua !important;
     font-weight: bold;
   }
 }
