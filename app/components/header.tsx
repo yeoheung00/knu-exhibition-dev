@@ -45,10 +45,10 @@ export default function Header(){
           <li className={`${pathname=="/projectpage"?styles.current:null}`}><Link onClick={dropdown} href={pathname}>Project</Link></li>
           <div className={`${styles.dropdown} ${isDrop?styles.active:null}`}>
             <ul>
-              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage">Advertising Design</Link></li>
-              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage">Visual Design Project</Link></li>
-              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage">Editorial Design</Link></li>
-              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage">Package Design</Link></li>
+              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage/advertising">Advertising Design</Link></li>
+              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage/visual">Visual Design</Link></li>
+              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage/editorial">Editorial Design</Link></li>
+              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage/package">Package Design</Link></li>
             </ul>
           </div>
           <li className={`${pathname=="/indexpage"?styles.current:null}`}><Link onClick={()=>{close(); dropup();}} href="/indexpage">Index</Link></li>
