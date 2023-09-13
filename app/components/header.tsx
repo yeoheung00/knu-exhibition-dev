@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { BsInstagram } from 'react-icons/bs';
 
 export default function Header(){
-  const pathname = usePathname();
+  const pathname = usePathname().split("/")[1];
   const [isOpen, setIsOpen] = useState(false);
   const [isDrop, setIsDrop] = useState(false);
   const open = () => {
@@ -40,18 +40,10 @@ export default function Header(){
         </div>
 
         <ul>
-          <li className={`${pathname=="/"?styles.current:null}`}><Link onClick={()=>{close(); dropup();}} href="/">Main</Link></li>
-          <li className={`${pathname=="/aboutpage"?styles.current:null}`}><Link onClick={()=>{close(); dropup();}} href="/aboutpage">About</Link></li>
-          <li className={`${pathname=="/projectpage"?styles.current:null}`}><Link onClick={dropdown} href={pathname}>Project</Link></li>
-          <div className={`${styles.dropdown} ${isDrop?styles.active:null}`}>
-            <ul>
-              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage/advertising">Advertising Design</Link></li>
-              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage/visual">Visual Design</Link></li>
-              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage/editorial">Editorial Design</Link></li>
-              <li onClick={()=>{close(); dropup();}}><Link href="/projectpage/package">Package Design</Link></li>
-            </ul>
-          </div>
-          <li className={`${pathname=="/indexpage"?styles.current:null}`}><Link onClick={()=>{close(); dropup();}} href="/indexpage">Index</Link></li>
+          <li className={`${pathname==""?styles.current:null}`}><Link onClick={close} href="/">Main</Link></li>
+          <li className={`${pathname=="aboutpage"?styles.current:null}`}><Link onClick={close} href="/aboutpage">About</Link></li>
+          <li className={`${pathname=="projectpage"?styles.current:null}`}><Link onClick={close} href="/projectpage">Project</Link></li>
+          <li className={`${pathname=="indexpage"?styles.current:null}`}><Link onClick={close} href="/indexpage">Index</Link></li>
           <li className={styles.sns}><BsInstagram/></li>
         </ul>
       </nav>

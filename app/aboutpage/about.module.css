@@ -7,18 +7,18 @@
 }
 
 .title h2{
-  color: #E85087;
+  color: var(--main);
   margin-right: 20px;
 }
 
 .titlebox{
-  background-color: #E85087;
+  background-color: var(--main);
   flex: 1 0 auto
 }
 
 .article{
   padding: 50px 20px;
-  color: #E85087;
+  color: var(--main);
 }
 
 .article p{
@@ -28,5 +28,5 @@
 .map{
   width: calc(100vw - 40px);
   height: calc(100vw - 20px);
-  background-color: #E85087;
+  background-color: var(--main);
 }

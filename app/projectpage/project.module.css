@@ -1,3 +1,36 @@
-.root{
+.root {
   padding-top: 60px;
+}
+
+@media screen and (min-width: 1240px) {
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    padding: 0 50px;
+    margin: 40px 0 20px 0;
+  }
+
+  .tab {
+    display: none;
+  }
+
+  .gallery {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    width: 32vw;
+    height: 32vw;
+    margin-bottom: 1vw;
+    background-color: blueviolet;
+  }
 }

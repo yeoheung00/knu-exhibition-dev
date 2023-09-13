@@ -1,0 +1,84 @@
+@media screen and (min-width: 768px) {
+  .root{
+    background-color: var(--main);
+    padding-top: 10px;
+  }
+
+  .tab {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--main);
+  }
+
+  .tab button{
+    width: 120px;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    border: 0;
+    padding: 10px 0;
+  }
+
+  .tab .active{
+    font-weight: bold;
+    color: var(--accent);
+    border-radius: 20px 20px 0 0;
+    background-color: white;
+  }
+
+  .drop{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tab{
+    display: none;
+  }
+  
+  .drop{
+    background-color: var(--main);
+  }
+
+  .drop .active{
+    display: none;
+  }
+
+  .selected{
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .list{
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .list.open{
+    height: 250px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .list button{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+  }
+}
