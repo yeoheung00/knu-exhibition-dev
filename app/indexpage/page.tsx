@@ -38,7 +38,7 @@ export default function Profile() {
           <button className={`${styles.sort} ${sort == 2 ? styles.active : null}`} onClick={() => setSort(2)}>제품디자인</button>
         </div>
         <div className={styles.searchwrap}>
-          <img src='./icons/search.svg' alt='search' />
+          <img src='./icons/Search.svg' alt='search' />
           <input value={searchValue} onChange={handlerSearchValue} type='text' />
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function Profile() {
       <div className={styles.listwrap}>
         {
           list.map((item) => {
-            return (data[item].name.includes(searchValue) ? <Item name={data[item].name} major={data[item].major} work={data[item].work} /> : null
+            return (data[item].name.includes(searchValue) ? <Item key={data[item].id} name={data[item].name} major={data[item].major} work={data[item].work} /> : null
             );
           })
         }

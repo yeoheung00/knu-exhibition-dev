@@ -6,9 +6,9 @@ type itemProps = {
   work: string
 };
 
-export default function Item(data: itemProps){
-  const {name, major, work} = data;
-  return(
+export default function Item(data: itemProps) {
+  const { name, major, work } = data;
+  return (
     <div className={styles.root}>
       <h3 className={styles.name}>{name}</h3>
       <p className={styles.major}>{major}디자인전공</p>
