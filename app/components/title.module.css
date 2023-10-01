@@ -1,10 +1,21 @@
 .root{
   display: flex;
-  color: #E85087;
-  margin-bottom: 50px;
+  color: var(--main);
+  margin-bottom: 40px;
 }
 .box{
   flex: 1 0 auto;
-  background-color: #E85087;
+  background-color: var(--main);
+}
+.box:first-child{
+  margin-right: 20px;
+}
+.box:nth-child(3){
   margin-left: 20px;
+}
+.box:first-child[data-align='left']{
+  display: none;
+}
+.box:nth-child(2)[data-align='right']{
+  display: none;
 }

@@ -1,35 +1,114 @@
 import styles from './about.module.css'
 import Title from '../components/title'
 
-export default function About(){
-  return(
+export default function About() {
+  return (
     <div className={styles.root}>
       <div className={styles.article}>
-        <Title title={<h2>PIECE<br/>OF<br/>CAKE</h2>}/>
-        <p>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다. 인생의 쓸쓸한 뼈 불어 피어나는 어디 힘있다. 사랑의 뜨거운지라, 풍부하게 소리다.이것은 것이다. 너의 풍부하게 트고, 동력은 전인 예수는 오직 교향악이다. 고동을 있는 우리 역사를 되는 풍부하게 찾아다녀도, 인간에 같지 끓는다. 풀밭에 그들을 있으며, 돋고, 노래하며 바이며, 싹이 인류의 꽃 이것이다. 앞이 가는 동력은 얼음이 가치를 수 얼음에 있으랴? 가장 스며들어 트고, 사랑의 안고, 대한 이 것이다.</p>
-        <p>그러므로 천지는 쓸쓸한 아름다우냐? 얼음과 용기가 위하여 같이, 대한 청춘 희망의 뿐이다. 가치를 석가는 위하여, 보이는 힘차게 아름다우냐? 같이, 이것이야말로 기쁘며, 인간에 불어 인간이 새가 있는가? 만천하의 튼튼하며, 웅대한 방황하여도, 예수는 대중을 공자는 가장 것이다. 끝까지 황금시대를 대고, 위하여서. 찾아다녀도, 그들은 피어나는 보는 있을 놀이 웅대한 철환하였는가? 같은 실현에 피고 아름다우냐? 석가는 그것을 미인을 얼마나 얼음과 때문이다.</p>
-        <p>눈에 인류의 전인 피어나기 끓는 청춘이 끓는 힘있다. 이는 보는 것이다.보라, 바이며, 굳세게 피어나는 위하여, 안고, 만물은 약동하다. 그들의 우리의 아름답고 구하지 것이다. 생의 충분히 인생을 능히 불어 황금시대다. 스며들어 찾아 못하다 듣기만 우리의 것이다. 위하여 같은 것은 뛰노는 목숨이 싹이 이성은 뜨거운지라, 발휘하기 때문이다. 과실이 황금시대를 꾸며 평화스러운 청춘의 고행을 미묘한 있으랴? 무엇이 위하여, 오아이스도 그들은 황금시대를 고동을 과실이 것이다. 그들을 뛰노는 얼마나 뭇 인간이 것이다. 바로 우리의 풀이 것이다.</p>
+        <Title title={<h2>졸업전시 컨셉</h2>} align='left' />
+        <div className={styles.concept}>
+          <img src='' alt='concept'/>
+          <p>
+            <span className={styles.accent}>“Piece of cake”</span>
+            <br />
+            <br />
+            작업물은 우리를 나타내는 개개인의 ‘조각(Piece)’입니다.
+            이러한 우리의 ‘조각(Piece)’들을 모아 하나의 전시회(Cake)를 이뤘습니다.
+            사람들은 특별한 날을 기릴 때 그 가운데에 케이크를 두고 기념합니다.
+            이번 전시는, 각 개인의 대학과정의 막을 내리는 날로 기념적인 날이며, 앞으로 우리들의 새 출발을 응원하는 자리이기도 합니다.
+            <br /><br />
+            우리는 말합니다.
+            <br />
+            ‘케이크’의 ’조각‘으로 비유하며, 졸업전시가 축하의 중심 장소라고.
+          </p>
+        </div>
       </div>
 
       <div className={styles.article}>
-        <Title title={<h2>졸업준비위원회</h2>}/>
-        <h3>인테리어</h3>
-        <p>민경원, 김수지, 최현정, 구진욱</p>
-        <h3>도록</h3>
-        <p>민경원, 김수지, 최현정, 구진욱</p>
-        <h3>웹</h3>
-        <p>민경원, 김수지, 최현정, 구진욱</p>
-        <h3>포스터</h3>
-        <p>민경원, 김수지, 최현정, 구진욱</p>
+        <Title title={<h2>졸업준비위원회 조직도</h2>} align='left' />
+        <div className={styles.teamwrap}>
+          <div className={styles.team}>
+            <h3>졸업준비위원회</h3>
+            <div className={styles.contents}>
+              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <div className={styles.rolewrap}>
+                <div><p className={styles.role}>위원장</p><p className={styles.member}>김아영(시각)<br />임승태(제품)</p></div>
+                <div><p className={styles.role}>부위원장</p><p className={styles.member}>김민서(시각)<br />정한맘(제품)</p></div>
+                <div><p className={styles.role}>총무</p><p className={styles.member}>정환효(시각)</p></div>
+                <div><p className={styles.role}>서기</p><p className={styles.member}>지환준(제품)</p></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.team}>
+            <h3>도록</h3>
+            <div className={styles.contents}>
+              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <div className={styles.rolewrap}>
+                <div><p className={styles.role}>팀장</p><p className={styles.member}>변지은(시각)</p></div>
+                <div><p className={styles.role}>팀원</p><p className={styles.member}>민주혜(시각)<br />이다연(시각)<br />이정미(제품)<br />이지우(시각)<br />이해지(시각)</p></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.team}>
+            <h3>영상</h3>
+            <div className={styles.contents}>
+              <p className={styles.partdes}>우리의 전시를 미디어를 통해 보여주며 피시스오브 케이크가 가지고 있는 이야기를 여러분들께 보다 빠르게 전달하고자 홍보영상을 제작하였습니다.</p>
+              <div className={styles.rolewrap}>
+                <div><p className={styles.role}>팀장</p><p className={styles.member}>김위성(시각)</p></div>
+                <div><p className={styles.role}>팀원</p><p className={styles.member}>민경민(제품)<br />김도원(제품)</p></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.team}>
+            <h3>웹</h3>
+            <div className={styles.contents}>
+              <p className={styles.partdes}>이번 디자인컨버전스 졸업생들의 4년간의 노력의 결실을 보여주는 졸업전시회에 오고싶었으나 부득이하게 오지 못하신 분들을 위하여 온라인으로 졸업생들의 작품을 감상하실 수 있게 온라인 전시를 구축하였습니다.</p>
+              <div className={styles.rolewrap}>
+                <div><p className={styles.role}>팀장</p><p className={styles.member}>민경원(시각)</p></div>
+                <div><p className={styles.role}>팀원</p><p className={styles.member}>구진욱(시각)<br />김수지(시각)<br />최현정(시각)</p></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.team}>
+            <h3>인테리어</h3>
+            <div className={styles.contents}>
+              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <div className={styles.rolewrap}>
+                <div><p className={styles.role}>팀장</p><p className={styles.member}>천예은(제품)</p></div>
+                <div><p className={styles.role}>팀원</p><p className={styles.member}>김다영(시각)<br />유지우(시각)<br />윤규찬(시각)<br />이은서(제품)<br />이현송(제품)<br />임가현(제품)<br />최은정(시각)</p></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.team}>
+            <h3>포스터</h3>
+            <div className={styles.contents}>
+              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <div className={styles.rolewrap}>
+                <div><p className={styles.role}>팀장</p><p className={styles.member}>이승지(시각)</p></div>
+                <div><p className={styles.role}>팀원</p><p className={styles.member}>윤원하(제품)<br />윤유진(시각)<br />이은혜(시각)<br />최유림(시각)</p></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.team}>
+            <h3>홍보</h3>
+            <div className={styles.contents}>
+              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <div className={styles.rolewrap}>
+                <div><p className={styles.role}>팀장</p><p className={styles.member}>임연주(홍보)</p></div>
+                <div><p className={styles.role}>팀원</p><p className={styles.member}>강연우(제품)<br />김선주(제품)<br />박우영(시각)<br />박지훈(제품)<br />서경원(제품)<br />정보영(제품)</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className={styles.article}>
-        <Title title={<h2>전시일정</h2>}/>
+        <Title title={<h2>전시일정</h2>} align='left' />
         <h3>일시</h3>
         <p>2023. 12. 7. ~ 2023. 12. 11.</p>
         <h3>장소</h3>
-        <p>충청남도 천안시 천안대로 1223-24<br/>국립공주대학교 천안캠퍼스 10공학관 1층</p>
-        <div className={styles.map}/>
+        <p>충청남도 천안시 천안대로 1223-24<br />국립공주대학교 천안캠퍼스 10공학관 1층</p>
+        <div className={styles.map} />
       </div>
 
 

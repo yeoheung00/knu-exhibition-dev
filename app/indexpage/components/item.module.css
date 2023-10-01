@@ -1,0 +1,25 @@
+.root{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  background-color: white;
+  z-index: 10;
+}
+
+.root:nth-child(4n-1), .root:nth-child(4n-2){
+  background-color: var(--main-glassy);
+}
+
+.name{
+  color: var(--main);
+  margin-right: 10px;
+}
+
+.major{
+  margin-right: 10px;
+}
+
+.work{
+  color: gray;
+}

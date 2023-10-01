@@ -1,10 +1,79 @@
 .root{
-  padding-top: 60px;
+  padding: 60px 100px 0 100px;
+}
+
+.concept{
+  display: flex;
+}
+
+.concept img{
+  width: 420px;
+  height: 594px;
+  background-color: var(--main);
+  margin: 20px;
+}
+
+.accent{
+  font-size: x-large;
+  font-weight: bold;
+  color: var(--main);
+}
+
+.concept p{
+  flex: 1;
+  margin: 20px;
+  color: black;
 }
 
 .title{
   display: flex;
 }
+
+.teamwrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team{
+  width: calc(50% - 10px);
+}
+
+.team h3{
+  margin: 20px 0 0 20px;
+}
+
+.contents{
+  display: flex;
+  margin: 0 10px;
+}
+
+.partdes{
+  flex: 1;
+  margin: 20px 50px 20px 10px;
+  color: black;
+}
+
+.rolewrap{
+  margin: 10px;
+}
+
+.rolewrap div{
+  display: flex;
+  justify-content: end;
+  margin: 10px 0;
+}
+
+.role{
+  font-weight: bold;
+}
+
+.member{
+  margin-left: 10px;
+  color: black;
+}
+
+
 
 .title h2{
   color: var(--main);
@@ -22,7 +91,6 @@
 }
 
 .article p{
-  margin: 10px 0 50px 0;
 }
 
 .map{
