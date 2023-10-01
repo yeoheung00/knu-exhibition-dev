@@ -90,9 +90,6 @@
   color: var(--main);
 }
 
-.article p{
-}
-
 .map{
   width: calc(100vw - 40px);
   height: calc(100vw - 20px);

@@ -94,8 +94,8 @@ export default function About() {
             <div className={styles.contents}>
               <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
               <div className={styles.rolewrap}>
-                <div><p className={styles.role}>팀장</p><p className={styles.member}>임연주(홍보)</p></div>
-                <div><p className={styles.role}>팀원</p><p className={styles.member}>강연우(제품)<br />김선주(제품)<br />박우영(시각)<br />박지훈(제품)<br />서경원(제품)<br />정보영(제품)</p></div>
+                <div><p className={styles.role}>팀장</p><p className={styles.member}>박우영(시각)</p></div>
+                <div><p className={styles.role}>팀원</p><p className={styles.member}>강연우(제품)<br />김선주(제품)<br />박지훈(제품)<br />서경원(제품)<br />임연주(제품)<br />정보영(제품)</p></div>
               </div>
             </div>
           </div>

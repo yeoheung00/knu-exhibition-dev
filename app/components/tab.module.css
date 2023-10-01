@@ -1,14 +1,16 @@
 @media screen and (min-width: 768px) {
   .root{
     background-color: var(--main);
-    padding-top: 10px;
+    height: 60px;
   }
 
   .tab {
     display: flex;
     justify-content: space-around;
+    align-items:end;
     flex-wrap: wrap;
     max-width: 1000px;
+    height: 60px;
     margin: auto;
     background-color: var(--main);
   }
