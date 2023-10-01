@@ -82,7 +82,7 @@ export default function About() {
           <div className={styles.team}>
             <h3>포스터</h3>
             <div className={styles.contents}>
-              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <p className={styles.partdes}>디자인컨버전스학과의 첫 졸업전시인 만큼 저희 졸업전시 주제인 'piece of cake'에 맞춰 졸업전시의 축하와 컨버전스의 결합 그리고 융합의 의미가 담긴 시각적인 그래픽'cake'를 넣은 포스터를 제작하였습니다.</p>
               <div className={styles.rolewrap}>
                 <div><p className={styles.role}>팀장</p><p className={styles.member}>이승지(시각)</p></div>
                 <div><p className={styles.role}>팀원</p><p className={styles.member}>윤원하(제품)<br />윤유진(시각)<br />이은혜(시각)<br />최유림(시각)</p></div>

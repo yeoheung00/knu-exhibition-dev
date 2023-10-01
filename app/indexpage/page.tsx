@@ -54,9 +54,10 @@ export default function Profile() {
             <button className={`${sort == 2 ? styles.active : null}`} onClick={() => { setSort(2); openSorts(); }}>제품디자인</button>
           </div>
         </div>
-        <div className={styles.searchwrap}>
-          <img onClick={openSearch} src='./icons/Search.svg' alt='search' />
+        <div className={`${styles.searchwrap} ${search ? styles.active : null}`}>
+          <img className={`${styles.search} ${search ? styles.active : null}`} onClick={openSearch} src='./icons/Search.svg' alt='search' />
           <input className={`${search ? styles.active : null}`} value={searchValue} onChange={handlerSearchValue} type='text' />
+          <img className={`${styles.closer} ${search ? styles.active : null}`} onClick={openSearch} src='./icons/Close.svg' alt='close' />
         </div>
       </div>
       <div className={styles.empty}><span>'{searchValue}'</span>이(가) 포함된 이름이 없습니다.</div>

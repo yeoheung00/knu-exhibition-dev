@@ -30,10 +30,7 @@ export default function Header(){
       <img className={styles.opener} src='./icons/Hamburger.svg' onClick={open}/>
       <nav className={`${styles.nav} ${isOpen?styles.active:null}`}>
 
-        <div className={styles.closer} onClick={()=>{close(); dropup();}}>
-          <div className={styles.firstX}></div>
-          <div className={styles.secondX}></div>
-        </div>
+        <img className={styles.closer} src='./icons/Close.svg' onClick={()=>{close(); dropup();}}/>
 
         <ul>
           <li className={`${pathname==""?styles.current:null}`}><Link onClick={close} href="/">Main</Link></li>
