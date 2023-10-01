@@ -52,7 +52,7 @@ export default function About() {
           <div className={styles.team}>
             <h3>영상</h3>
             <div className={styles.contents}>
-              <p className={styles.partdes}>우리의 전시를 미디어를 통해 보여주며 피시스오브 케이크가 가지고 있는 이야기를 여러분들께 보다 빠르게 전달하고자 홍보영상을 제작하였습니다.</p>
+              <p className={styles.partdes}>우리의 전시를 미디어를 통해 보여주며 PIECE OF CAKE가 가지고 있는 이야기를 여러분들께 보다 빠르게 전달하고자 홍보영상을 제작하였습니다.</p>
               <div className={styles.rolewrap}>
                 <div><p className={styles.role}>팀장</p><p className={styles.member}>김위성(시각)</p></div>
                 <div><p className={styles.role}>팀원</p><p className={styles.member}>민경민(제품)<br />김도원(제품)</p></div>
@@ -62,7 +62,7 @@ export default function About() {
           <div className={styles.team}>
             <h3>웹</h3>
             <div className={styles.contents}>
-              <p className={styles.partdes}>이번 디자인컨버전스 졸업생들의 4년간의 노력의 결실을 보여주는 졸업전시회에 오고싶었으나 부득이하게 오지 못하신 분들을 위하여 온라인으로 졸업생들의 작품을 감상하실 수 있게 온라인 전시를 구축하였습니다.</p>
+              <p className={styles.partdes}>이번 디자인컨버전스 졸업생들의 4년간의 노력의 결실을 보여주는 졸업전시회에 오고싶었으나 부득이하게 오지 못하신 분들을 위하여 온라인으로 졸업생들의 작품을 감상하실 수 있게 온라인 전시를 준비했습니다.</p>
               <div className={styles.rolewrap}>
                 <div><p className={styles.role}>팀장</p><p className={styles.member}>민경원(시각)</p></div>
                 <div><p className={styles.role}>팀원</p><p className={styles.member}>구진욱(시각)<br />김수지(시각)<br />최현정(시각)</p></div>
