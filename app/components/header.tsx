@@ -27,11 +27,7 @@ export default function Header(){
     <div className={styles.root}>
       <h1 className={styles.title}>PIECE OF CAKE</h1>
 
-      <div className={styles.opener} onClick={open}>
-        <div className={styles.first}></div>
-        <div className={styles.second}></div>
-        <div className={styles.third}></div>
-      </div>
+      <img className={styles.opener} src='./icons/Hamburger.svg' onClick={open}/>
       <nav className={`${styles.nav} ${isOpen?styles.active:null}`}>
 
         <div className={styles.closer} onClick={()=>{close(); dropup();}}>

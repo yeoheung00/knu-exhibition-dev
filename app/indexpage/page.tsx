@@ -2,13 +2,14 @@
 
 import Item from "./components/item";
 import styles from "./index.module.css"
-import { ChangeEvent, useEffect, useMemo, useState } from "react";
+import { ChangeEvent, use, useEffect, useMemo, useState } from "react";
 import db from './db/data.json';
 
 export default function Profile() {
   const data = db.graduate;
   const [searchValue, setSearchValue] = useState('');
   const [sort, setSort] = useState(0); // 0: all, 1: visual, 2: product
+  const parts = ['전체', '시각디자인', '제품디자인'];
   const handlerSearchValue = (event: ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value);
   }
@@ -28,6 +29,14 @@ export default function Profile() {
 
     return [];
   }, [sort]);
+  const [open, setOpen] = useState(false);
+  function openSorts() {
+    setOpen((current) => !current);
+  }
+  const [search, setSearch] = useState(false);
+  function openSearch() {
+    setSearch(current => !current);
+  }
   return (
     <div className={styles.root}>
       <div className={styles.controler}>
@@ -37,9 +46,17 @@ export default function Profile() {
           <button className={`${styles.sort} ${sort == 1 ? styles.active : null}`} onClick={() => setSort(1)}>시각디자인</button>
           <button className={`${styles.sort} ${sort == 2 ? styles.active : null}`} onClick={() => setSort(2)}>제품디자인</button>
         </div>
+        <div className={styles.dropwrap}>
+          <button className={styles.now} onClick={openSorts}>{parts[sort]}</button>
+          <div className={`${styles.list} ${open ? styles.open : null}`}>
+            <button className={`${sort == 0 ? styles.active : null}`} onClick={() => { setSort(0); openSorts(); }}>전체</button>
+            <button className={`${sort == 1 ? styles.active : null}`} onClick={() => { setSort(1); openSorts(); }}>시각디자인</button>
+            <button className={`${sort == 2 ? styles.active : null}`} onClick={() => { setSort(2); openSorts(); }}>제품디자인</button>
+          </div>
+        </div>
         <div className={styles.searchwrap}>
-          <img src='./icons/Search.svg' alt='search' />
-          <input value={searchValue} onChange={handlerSearchValue} type='text' />
+          <img onClick={openSearch} src='./icons/Search.svg' alt='search' />
+          <input className={`${search ? styles.active : null}`} value={searchValue} onChange={handlerSearchValue} type='text' />
         </div>
       </div>
       <div className={styles.empty}><span>'{searchValue}'</span>이(가) 포함된 이름이 없습니다.</div>

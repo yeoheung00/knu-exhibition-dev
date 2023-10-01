@@ -2,11 +2,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  outline-color: var(--accent);
 }
 
 html, body {
   max-width: 100vw;
-  --main: rgb(84, 75, 206);
-  --main-glassy: rgba(84, 75, 206, 0.2);
+  --main: #544bce;
+  --main-glassy: hsl(244, 57%, 94%);
   --accent: #ff914d;
 }
