@@ -1,97 +1,357 @@
-.root{
-  padding: 60px 100px 0 100px;
+@media screen and (min-width: 1240px) {
+  .root {
+    padding: 60px 100px 0 100px;
+  }
+
+  .concept {
+    display: flex;
+  }
+
+  .concept img {
+    width: 420px;
+    height: 594px;
+    background-color: var(--main);
+    margin: 20px;
+  }
+
+  .accent {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--main);
+  }
+
+  .concept p {
+    flex: 1;
+    margin: 20px;
+    color: black;
+  }
+
+  .title {
+    display: flex;
+  }
+
+  .teamwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .team {
+    width: calc(50% - 10px);
+  }
+
+  .team h3 {
+    margin: 20px 0 0 20px;
+  }
+
+  .contents {
+    display: flex;
+    margin: 0 10px;
+  }
+
+  .partdes {
+    flex: 1;
+    margin: 20px 50px 20px 10px;
+    color: black;
+  }
+
+  .rolewrap {
+    margin: 10px;
+  }
+
+  .rolewrap div {
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+  }
+
+  .role {
+    font-weight: bold;
+  }
+
+  .member {
+    margin-left: 10px;
+    color: black;
+  }
+
+
+
+  .title h2 {
+    color: var(--main);
+    margin-right: 20px;
+  }
+
+  .titlebox {
+    background-color: var(--main);
+    flex: 1 0 auto
+  }
+
+  .article {
+    padding: 50px 20px;
+    color: var(--main);
+  }
+
+  .offline {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .infowrap {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    flex: 1;
+  }
+
+  .info {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .map {
+    margin: 20px;
+    width: 60%;
+    height: auto;
+    border: 1px solid var(--main);
+    border-radius: 20px;
+
+  }
 }
 
-.concept{
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .root {
+    padding: 60px 20px 0 20px;
+  }
+
+  .concept {
+    display: flex;
+  }
+
+  .concept img {
+    width: 420px;
+    height: 594px;
+    background-color: var(--main);
+    margin: 20px;
+  }
+
+  .accent {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--main);
+  }
+
+  .concept p {
+    flex: 1;
+    margin: 20px;
+    color: black;
+  }
+
+  .title {
+    display: flex;
+  }
+
+  .teamwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .team {
+    width: 100%;
+  }
+
+  .team h3 {
+    margin: 20px 0 0 20px;
+  }
+
+  .contents {
+    display: flex;
+    margin: 0 10px;
+  }
+
+  .partdes {
+    flex: 1;
+    margin: 20px 50px 20px 10px;
+    color: black;
+  }
+
+  .rolewrap {
+    margin: 10px;
+  }
+
+  .rolewrap div {
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+  }
+
+  .role {
+    font-weight: bold;
+  }
+
+  .member {
+    margin-left: 10px;
+    color: black;
+  }
+
+
+
+  .title h2 {
+    color: var(--main);
+    margin-right: 20px;
+  }
+
+  .titlebox {
+    background-color: var(--main);
+    flex: 1 0 auto
+  }
+
+  .article {
+    padding: 50px 20px;
+    color: var(--main);
+  }
+
+
+  .offline {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .infowrap {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+
+  .info {
+    width: calc(50% - 10px);
+  }
+
+  .map {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--main);
+    border-radius: 20px;
+
+  }
 }
 
-.concept img{
-  width: 420px;
-  height: 594px;
-  background-color: var(--main);
-  margin: 20px;
-}
+@media screen and (max-width: 767px) {
 
-.accent{
-  font-size: x-large;
-  font-weight: bold;
-  color: var(--main);
-}
+  .root {
+    padding: 60px 20px 0 20px;
+  }
 
-.concept p{
-  flex: 1;
-  margin: 20px;
-  color: black;
-}
+  .concept {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
 
-.title{
-  display: flex;
-}
+  .concept img {
+    width: 100%;
+    background-color: var(--main);
+  }
 
-.teamwrap{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+  .accent {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--main);
+  }
 
-.team{
-  width: calc(50% - 10px);
-}
+  .concept p {
+    flex: 1;
+    margin: 20px;
+    color: black;
+  }
 
-.team h3{
-  margin: 20px 0 0 20px;
-}
+  .title {
+    display: flex;
+  }
 
-.contents{
-  display: flex;
-  margin: 0 10px;
-}
+  .teamwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-.partdes{
-  flex: 1;
-  margin: 20px 50px 20px 10px;
-  color: black;
-}
+  .team {
+    width: 100%;
+  }
 
-.rolewrap{
-  margin: 10px;
-}
+  .team h3 {
+    margin: 20px 0 0 20px;
+  }
 
-.rolewrap div{
-  display: flex;
-  justify-content: end;
-  margin: 10px 0;
-}
+  .contents {
+    display: flex;
+    margin: 0 10px;
+  }
 
-.role{
-  font-weight: bold;
-}
+  .partdes {
+    flex: 1;
+    margin: 20px 50px 20px 10px;
+    color: black;
+  }
 
-.member{
-  margin-left: 10px;
-  color: black;
-}
+  .rolewrap {
+    margin: 10px;
+  }
+
+  .rolewrap div {
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+  }
+
+  .role {
+    font-weight: bold;
+  }
+
+  .member {
+    margin-left: 10px;
+    color: black;
+  }
 
 
 
-.title h2{
-  color: var(--main);
-  margin-right: 20px;
-}
+  .title h2 {
+    color: var(--main);
+    margin-right: 20px;
+  }
 
-.titlebox{
-  background-color: var(--main);
-  flex: 1 0 auto
-}
+  .titlebox {
+    background-color: var(--main);
+    flex: 1 0 auto
+  }
 
-.article{
-  padding: 50px 20px;
-  color: var(--main);
-}
+  .article {
+    padding: 50px 20px;
+    color: var(--main);
+  }
 
-.map{
-  width: calc(100vw - 40px);
-  height: calc(100vw - 20px);
-  background-color: var(--main);
+  .offline{
+    padding: 0 20px;
+  }
+
+  .infowrap{
+    display: flex;
+  }
+
+  .info{
+    width: calc(50% - 10px);
+  }
+
+  .map {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--main);
+    border-radius: 20px;
+  }
 }

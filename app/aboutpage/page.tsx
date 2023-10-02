@@ -7,7 +7,7 @@ export default function About() {
       <div className={styles.article}>
         <Title title={<h2>졸업전시 컨셉</h2>} align='left' />
         <div className={styles.concept}>
-          <img src='' alt='concept'/>
+          <img src='./poster.jpeg' alt='concept' />
           <p>
             <span className={styles.accent}>“Piece of cake”</span>
             <br />
@@ -103,15 +103,21 @@ export default function About() {
       </div>
 
       <div className={styles.article}>
-        <Title title={<h2>전시일정</h2>} align='left' />
-        <h3>일시</h3>
-        <p>2023. 12. 7. ~ 2023. 12. 11.</p>
-        <h3>장소</h3>
-        <p>충청남도 천안시 천안대로 1223-24<br />국립공주대학교 천안캠퍼스 10공학관 1층</p>
-        <div className={styles.map} />
+        <Title title={<h2>오프라인 전시</h2>} align='left' />
+        <div className={styles.offline}>
+          <div className={styles.infowrap}>
+            <div className={styles.info}>
+              <h3>일시</h3>
+              <p>2023. 12. 7. ~<br />2023. 12. 11.</p>
+            </div>
+            <div className={styles.info}>
+              <h3>장소</h3>
+              <p>충청남도 천안시 천안대로 1223-24<br />국립공주대학교 천안캠퍼스 10공학관 1층</p>
+            </div>
+          </div>
+          <img className={styles.map} src='./map.svg' alt='map' />
+        </div>
       </div>
-
-
     </div>
   )
 }
