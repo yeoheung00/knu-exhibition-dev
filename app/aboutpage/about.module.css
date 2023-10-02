@@ -285,22 +285,21 @@
   }
 
   .team h3 {
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 0;
   }
 
   .contents {
     display: flex;
-    margin: 0 10px;
   }
 
   .partdes {
     flex: 1;
-    margin: 20px 50px 20px 10px;
+    margin: 20px 20px 20px 0;
     color: black;
   }
 
   .rolewrap {
-    margin: 10px;
+    margin: 10px 0;
   }
 
   .rolewrap div {
@@ -331,12 +330,8 @@
   }
 
   .article {
-    padding: 50px 20px;
+    padding: 50px 0;
     color: var(--main);
-  }
-
-  .offline{
-    padding: 0 20px;
   }
 
   .infowrap{
