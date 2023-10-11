@@ -1,5 +1,5 @@
 import styles from './about.module.css'
-import Title from '../components/title'
+import Title from 'components/title'
 
 export default function About() {
   return (

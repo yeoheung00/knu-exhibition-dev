@@ -1,9 +1,9 @@
 'use client'
 
-import Item from "./components/item";
+import Item from "components/item";
 import styles from "./index.module.css"
 import { ChangeEvent, use, useEffect, useMemo, useState } from "react";
-import db from './db/data.json';
+import db from 'db/data.json';
 
 export default function Profile() {
   const data = db.graduate;
