@@ -2,6 +2,7 @@
   padding-top: 60px;
   position: fixed;
   width: 100vw;
+  position: relative;
 }
 
 .title {
@@ -9,25 +10,19 @@
   flex: 1;
 }
 
+.listbox {
+  width: 100%;
+  height: 1000px;
+  background-color: #eee;
+  overflow: scroll;
+}
+
 .listwrap {
   display: flex;
   flex-wrap: wrap;
-  max-height: calc(100vh - 120px);
-  overflow: scroll;
+  gap: 20px;
+  margin: 20px;
   padding-bottom: 100px;
-}
-
-.empty {
-  position: absolute;
-  top: 140px;
-  left: 20px;
-  z-index: 1;
-}
-
-.empty span {
-  color: var(--main);
-  font-size: large;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
@@ -64,7 +59,7 @@
     align-items: center;
   }
 
-  .searchwrap .closer{
+  .searchwrap .closer {
     display: none;
   }
 
@@ -151,7 +146,7 @@
     background-color: transparent;
   }
 
-  .searchwrap.active{
+  .searchwrap.active {
     position: absolute;
     width: 100vw;
     height: 60px;
@@ -167,15 +162,15 @@
     margin: 2px;
   }
 
-  .searchwrap .search.active{
+  .searchwrap .search.active {
     display: none;
   }
 
-  .searchwrap .closer{
+  .searchwrap .closer {
     display: none;
   }
-  
-  .searchwrap .closer.active{
+
+  .searchwrap .closer.active {
     display: block;
   }
 

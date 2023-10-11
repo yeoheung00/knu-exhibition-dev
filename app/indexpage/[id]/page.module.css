@@ -1,0 +1,65 @@
+.root{
+  padding-top: 120px;
+  width: 100vw;
+}
+
+.profile{
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.profile img{
+  width: 250px;
+  height: 250px;
+}
+
+.name{
+  color: var(--main);
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.contactwrap{
+  display: flex;
+  column-gap: 50px;
+  margin: 10px 0;
+}
+
+.contact {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.insta{
+  mask-image: url('/icons/insta.svg');
+  mask-size: 30px;
+  mask-repeat: no-repeat;
+  background-color: var(--main);
+  width: 30px;
+  height: 30px;
+}
+
+.email{
+  mask-image: url('/icons/email.svg');
+  mask-size: 30px;
+  mask-repeat: no-repeat;
+  background-color: var(--main);
+  width: 30px;
+  height: 30px;
+}
+
+.major{
+  color: var(--accent);
+  font-weight: bold;
+  font-size: x-large;
+  margin-left: 20px;
+}
+
+.works{
+  width: 100%;
+}

@@ -27,10 +27,10 @@ export default function Header(){
     <div className={styles.root}>
       <h1 className={styles.title}>PIECE OF CAKE</h1>
 
-      <img className={styles.opener} src='./icons/Hamburger.svg' onClick={open}/>
+      <img className={styles.opener} src='/icons/Hamburger.svg' onClick={open}/>
       <nav className={`${styles.nav} ${isOpen?styles.active:null}`}>
 
-        <img className={styles.closer} src='./icons/Close.svg' onClick={()=>{close(); dropup();}}/>
+        <img className={styles.closer} src='/icons/Close.svg' onClick={()=>{close(); dropup();}}/>
 
         <ul>
           <li className={`${pathname==""?styles.current:null}`}><Link onClick={close} href="/">Main</Link></li>

@@ -4,6 +4,7 @@ import Item from "components/item";
 import styles from "./index.module.css"
 import { ChangeEvent, use, useEffect, useMemo, useState } from "react";
 import db from 'db/data.json';
+import { useRouter } from "next/router";
 
 export default function Profile() {
   const data = db.graduate;
@@ -37,6 +38,11 @@ export default function Profile() {
   function openSearch() {
     setSearch(current => !current);
   }
+  const asdf = (id: number, name: string, major: string, work: string) => {
+    return (
+      <Item key={id} id={id} name={name} major={major} work={work} />
+    );
+  }
   return (
     <div className={styles.root}>
       <div className={styles.controler}>
@@ -60,14 +66,14 @@ export default function Profile() {
           <img className={`${styles.closer} ${search ? styles.active : null}`} onClick={openSearch} src='./icons/Close.svg' alt='close' />
         </div>
       </div>
-      <div className={styles.empty}><span>'{searchValue}'</span>이(가) 포함된 이름이 없습니다.</div>
-      <div className={styles.listwrap}>
-        {
-          list.map((item) => {
-            return (data[item].name.includes(searchValue) ? <Item key={data[item].id} name={data[item].name} major={data[item].major} work={data[item].work} /> : null
-            );
-          })
-        }
+      <div className={styles.listbox}>
+        <div className={styles.listwrap}>
+          {
+            list.map((item) => {
+              return (data[item].name.includes(searchValue) ? asdf(data[item].id, data[item].name, data[item].major, data[item].work) : null);
+            })
+          }
+        </div>
       </div>
     </div>
   )
