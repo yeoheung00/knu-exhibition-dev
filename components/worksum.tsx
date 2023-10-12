@@ -1,27 +1,21 @@
 import styles from './worksum.module.css'
 
 type dataType = {
-  id: number,
+  index: number,
   data: {
+    id: string,
     title: string,
-    des: string,
-    img: number
+    des: string
   }
 }
 
 export default function worksum(data: dataType) {
-  const { id, data:{title, des, img} } = data;
-  const imgs = Array.from({length: img}, (_, i)=> `${i}.jpg`);
-  console.log(imgs);
+  const {index, data:{id, title, des} } = data;
   return (
     <div className={styles.root}>
       <h1>{title}</h1>
       <p>{des}</p>
-      <div className={styles.imgs}>
-        {
-          imgs.map(item=><img src={`/profile/${id}/${title}/${item}`}/>)
-        }
-      </div>
+      <img className={styles.imgs} src={`/profile/${index}/${id}/thumb.jpg`}/>
     </div>
   )
 }

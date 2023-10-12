@@ -35,7 +35,7 @@ export default function Header(){
         <ul>
           <li className={`${pathname==""?styles.current:null}`}><Link onClick={close} href="/">Main</Link></li>
           <li className={`${pathname=="aboutpage"?styles.current:null}`}><Link onClick={close} href="/aboutpage">About</Link></li>
-          <li className={`${pathname=="projectpage"?styles.current:null}`}><Link onClick={close} href="/projectpage">Project</Link></li>
+          <li className={`${pathname=="projectpage"?styles.current:null}`}><Link onClick={close} href="/projectpage/advertising">Project</Link></li>
           <li className={`${pathname=="indexpage"?styles.current:null}`}><Link onClick={close} href="/indexpage">Index</Link></li>
           <li className={styles.sns}><BsInstagram/></li>
         </ul>

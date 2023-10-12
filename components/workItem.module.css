@@ -1,0 +1,49 @@
+.root{
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.thumb{
+  width: 300px;
+  height: 300px;
+}
+
+.title{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.designer{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.root:hover .title, .root:hover .designer{
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px){
+  .root{
+    width: calc((100vw - 40px));
+    height: calc((100vw - 40px));
+  }
+
+  .thumb{
+    width: calc((100vw - 40px));
+    height: calc((100vw - 40px));
+  }
+
+  .title, .designer{
+    opacity: 1;
+  }
+}

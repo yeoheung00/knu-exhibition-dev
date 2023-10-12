@@ -1,51 +1,53 @@
 @media screen and (min-width: 768px) {
   .root{
     background-color: var(--main);
-    height: 60px;
   }
 
-  .tab {
+  .list {
+    padding: 10px;
     display: flex;
-    justify-content: space-around;
-    align-items:end;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1000px;
-    height: 60px;
+    align-items:center;
     margin: auto;
-    background-color: var(--main);
   }
 
-  .tab button{
-    width: 120px;
+  .list a{
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
     background-color: transparent;
     color: white;
+    white-space: nowrap;
     font-size: large;
-    border: 0;
-    padding: 10px 0;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 0 12px;
   }
 
-  .tab .active{
-    font-weight: bold;
-    color: var(--accent);
-    border-radius: 20px 20px 0 0;
+  .list .active{
+    color: var(--main);
     background-color: white;
   }
 
-  .drop{
+  .selected{
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .tab{
-    display: none;
+@media screen and (min-width: 768px) {
+  .list{
+    overflow-x: scroll;
   }
-  
-  .drop{
+}
+
+@media screen and (max-width: 767px) {
+  .root{
     background-color: var(--main);
   }
 
-  .drop .active{
+  .list .active{
     display: none;
   }
 
@@ -61,7 +63,8 @@
 
   .list{
     position: absolute;
-    top: 110px;
+    z-index: 1111;
+    top: 130px;
     left: 10px;
     width: calc(100% - 20px);
     height: 0px;
@@ -73,7 +76,7 @@
 
   .list.open{
     height: 250px;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   }
 
   .list button{
