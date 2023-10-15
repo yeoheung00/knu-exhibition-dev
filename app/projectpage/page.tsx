@@ -6,12 +6,12 @@ import Tab from "components/tab"
 import WorkItem from "@/components/workItem"
 
 export default function Project() {
-  const subject_all = allPosts.map((item) => item.category);
-  const subjectList = subject_all.filter((item, index) => { return subject_all.indexOf(item) === index }).sort();
-  const [current, setCurrent] = useState(subjectList[0]);
+  //const subject_all = allPosts.map((item) => item.category);
+  //const subjectList = subject_all.filter((item, index) => { return subject_all.indexOf(item) === index }).sort();
+  const [current, setCurrent] = useState('advertising');
   return (
     <div className={styles.root}>
-      <Tab setCurrent={setCurrent} list={subjectList} current={current} />
+      {/* <Tab setCurrent={setCurrent} list={subjectList} current={current} /> */}
       <div className={styles.listViewer}>
         <div className={styles.listwrap}>
           {
