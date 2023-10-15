@@ -1,6 +1,6 @@
 'use client'
-import { useEffect, useMemo, useReducer, useState } from "react"
-import { allPosts, Post } from 'contentlayer/generated'
+import { useState } from "react"
+import { allPosts } from 'contentlayer/generated'
 import styles from "./page.module.css"
 import Tab from "components/tab"
 import WorkItem from "@/components/workItem"
