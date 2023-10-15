@@ -20,7 +20,7 @@ export default function Project() {
               if (a.title < b.title) return -1;
               return 0;
             }).map((item, index) =>
-              item.category == current ? <WorkItem key={index} {...item} /> : null
+              item.category == current ? <WorkItem key={index} url={item.url} title={item.title} designer={item.designer} /> : null
             )
           }
         </div>

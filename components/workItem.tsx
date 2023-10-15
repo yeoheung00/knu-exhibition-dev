@@ -4,9 +4,14 @@ import { Post } from 'contentlayer/generated';
 import graduate from 'db/graduate.json'
 import Image from 'next/image';
 
-export default function WorkItem(post: Post){
+type PropsType ={
+  url: string;
+  title: string;
+  designer: number;
+}
+
+export default function WorkItem(post: PropsType){
   const index = post.url.split('/').at(-1);
-  console.log(`/profile/${post.designer}/${index}/thumb.jpg`);
   return(
     <Link className={styles.root} href={post.url}>
       <Image className={styles.thumb} src={`/profile/${post.designer}/${index}/thumb.jpg`} alt='thumbnail' sizes="100vw" width={300} height={300}/>
