@@ -14,7 +14,7 @@ export default function Project() {
       {/* <Tab setCurrent={setCurrent} list={subjectList} current={current} /> */}
       <div className={styles.listViewer}>
         <div className={styles.listwrap}>
-          {
+          {/* {
             allPosts.sort((a, b) => {
               if (a.title > b.title) return 1;
               if (a.title < b.title) return -1;
@@ -22,7 +22,7 @@ export default function Project() {
             }).map((item, index) =>
               item.category == current ? <WorkItem key={index} url={item.url} title={item.title} designer={item.designer} /> : null
             )
-          }
+          } */}
         </div>
       </div>
     </div>
