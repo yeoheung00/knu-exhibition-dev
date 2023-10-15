@@ -52,6 +52,7 @@
 
 import Link from "next/link";
 import { allPosts, Post } from "contentlayer/generated";
+import styles from "./page.module.css"
 
 function PostCard(post: Post) {
 
@@ -75,12 +76,14 @@ export default function Home() {
   const subjectList = subject_all.filter((item, index) => { return subject_all.indexOf(item) === index }).sort();
 
   return (
-    <div className="max-w-xl py-8 mx-auto">
-      <h1 className="mb-8 text-3xl font-bold text-center">Next.js Example</h1>
-
-      {posts.map((post, idx) => (
-        <PostCard key={idx} {...post} />
-      ))}
+    <div className={styles.root}>
+      <div className={styles.listViewer}>
+        <div className={styles.listwrap}>
+          {posts.map((post, idx) => (
+            <PostCard key={idx} {...post} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
