@@ -71,8 +71,6 @@ function PostCard(post: Post) {
 
 export default function Home() {
   const posts = allPosts.sort();
-  const subject_all = allPosts.map((item) => item.category);
-  const subjectList = subject_all.filter((item, index) => { return subject_all.indexOf(item) === index }).sort();
 
   return (
     <div className="max-w-xl py-8 mx-auto">
