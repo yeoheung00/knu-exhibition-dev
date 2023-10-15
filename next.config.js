@@ -1,6 +1,6 @@
-//const { withContentlayer } = require('next-contentlayer')
+const { withContentlayer } = require('next-contentlayer');
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {};
 
-module.exports = nextConfig// withContentlayer(nextConfig)
+module.exports = withContentlayer(nextConfig);
