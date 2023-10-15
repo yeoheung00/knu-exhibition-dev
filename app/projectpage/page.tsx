@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 // import { useState } from "react"
 // import { Post, allPosts } from 'contentlayer/generated'
 // import styles from "./page.module.css"
