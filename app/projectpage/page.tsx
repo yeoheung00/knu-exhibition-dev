@@ -4,7 +4,6 @@ import { allPosts, Post } from 'contentlayer/generated'
 import styles from "./page.module.css"
 import Tab from "components/tab"
 import WorkItem from "@/components/workItem"
-import works from "db/works.json"
 
 export default function Project() {
   const subject_all = allPosts.map((item) => item.category);
