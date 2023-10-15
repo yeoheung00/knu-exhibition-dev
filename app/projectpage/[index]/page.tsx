@@ -39,31 +39,40 @@
 //   )
 // }
 
-import { allPosts } from 'contentlayer/generated'
-import { getMDXComponent } from 'next-contentlayer/hooks'
-import ImageViewer from '@/components/ImageViewer'
+// import { allPosts } from 'contentlayer/generated'
+// import { getMDXComponent } from 'next-contentlayer/hooks'
+// import ImageViewer from '@/components/ImageViewer'
 
-export const generateStaticParams = async () => allPosts.map((post) => ({ index: post._raw.flattenedPath }))
+// export const generateStaticParams = async () => allPosts.map((post) => ({ index: post._raw.flattenedPath }))
 
-export const generateMetadata = ({ params }: any) => {
-  const post = allPosts.find((post) => post._raw.flattenedPath === params.index)
-  if (post) return { title: post.title };
-  return { title: "err" }
-}
+// export const generateMetadata = ({ params }: any) => {
+//   const post = allPosts.find((post) => post._raw.flattenedPath === params.index)
+//   if (post) return { title: post.title };
+//   return { title: "err" }
+// }
 
-const PostLayout = ({ params }: { params: { index: string } }) => {
-  const post = allPosts.find((post) => post._raw.flattenedPath === params.index)
-  if (!post) return;
-  const Content = getMDXComponent(post.body.code)
+// const PostLayout = ({ params }: { params: { index: string } }) => {
+//   const post = allPosts.find((post) => post._raw.flattenedPath === params.index)
+//   if (!post) return;
+//   const Content = getMDXComponent(post.body.code)
 
-  return (
-    <article className="markdown-body">
-      <div className="mb-8 text-center">
-        <h1>{post.title}</h1>
-      </div>
-      <Content components={{ImageViewer}}/>
-    </article>
+//   return (
+//     <article className="markdown-body">
+//       <div className="mb-8 text-center">
+//         <h1>{post.title}</h1>
+//       </div>
+//       <Content components={{ImageViewer}}/>
+//     </article>
+//   )
+// }
+
+// export default PostLayout
+import styles from './page.module.css'
+
+export default function ProjectIndex({params}: {params: {index: string}}){
+  return(
+    <div className={styles.root}>
+      {params.index}
+    </div>
   )
 }
-
-export default PostLayout

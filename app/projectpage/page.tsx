@@ -1,5 +1,5 @@
-'use client'
-import WorkList from "@/components/worklist";
+// 'use client'
+// import WorkList from "@/components/worklist";
 // import { useState } from "react"
 // import { Post, allPosts } from 'contentlayer/generated'
 // import styles from "./page.module.css"
@@ -51,20 +51,30 @@ import WorkList from "@/components/worklist";
 //   )
 // }
 
-import styles from "./page.module.css"
-import Tab from "components/tab"
-import { useState } from "react";
+// import styles from "./page.module.css"
+// import Tab from "components/tab"
+// //import { useState } from "react";
 
 
-export default function Home() {
-  const subjectList = ['advertising', 'multimedia'];
-  const [current, setCurrent] = useState('advertising');
-  return (
+// export default function Home() {
+//   const subjectList = ['advertising', 'multimedia'];
+//   //const [current, setCurrent] = useState('advertising');
+//   return (
+//     <div className={styles.root}>
+//       <Tab setCurrent={setCurrent} list={subjectList} current={current} />
+//       <div className={styles.listViewer}>
+//         <WorkList/>
+//       </div>
+//     </div>
+//   );
+// }
+
+import styles from './page.module.css'
+
+export default function ProjectPage(){
+  return(
     <div className={styles.root}>
-       <Tab setCurrent={setCurrent} list={subjectList} current={current} />
-      <div className={styles.listViewer}>
-        {/* <WorkList/> */}
-      </div>
+      function
     </div>
-  );
+  )
 }
