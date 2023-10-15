@@ -7,7 +7,7 @@ export default function Page({ params }: { params: { id: number } }) {
   return (
     <main className={styles.root}>
       <div className={styles.profile}>
-        <img src={`/profile/${id}/cake.jpg`} alt='cake' />
+        <img src={`/profile/${id}/profile.jpg`} alt='cake' />
         <div className={styles.intro}>
           <p className={styles.name}>{db[id].name}<span className={styles.major}>{db[id].major}디자인전공</span></p>
           <div className={styles.contactwrap}>

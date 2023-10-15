@@ -1,19 +1,17 @@
 import Link from 'next/link';
 import styles from './workItem.module.css'
+import { Post } from 'contentlayer/generated';
+import graduate from 'db/graduate.json'
+import Image from 'next/image';
 
-type PropType = {
-  subject: string,
-  index: string,
-  title: string,
-  designer: string
-}
-export default function WorkItem(props: PropType){
-  const {subject, index, title, designer} = props;
+export default function WorkItem(post: Post){
+  const index = post.url.split('/').at(-1);
+  console.log(`/profile/${post.designer}/${index}/thumb.jpg`);
   return(
-    <Link className={styles.root} href={`/projectpage/${subject}/${index}`}>
-      <img className={styles.thumb} src={`/works/${subject}/${index}/thumb.jpg`} alt='thumbnail'/>
-      <h2 className={styles.title}>{title}</h2>
-      <h3 className={styles.designer}>{designer}</h3>
+    <Link className={styles.root} href={post.url}>
+      <Image className={styles.thumb} src={`/profile/${post.designer}/${index}/thumb.jpg`} alt='thumbnail' sizes="100vw" width={300} height={300}/>
+      <h2 className={styles.title}>{post.title}</h2>
+      <h3 className={styles.designer}>{graduate[post.designer].name}</h3>
     </Link>
   )
 }

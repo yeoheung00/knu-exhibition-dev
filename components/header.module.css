@@ -27,8 +27,12 @@
   }
 
   .title {
+    text-decoration: none;
     line-height: 50px;
     margin-left: 15px;
+  }
+
+  .title h1{
     color: var(--main);
   }
 
@@ -63,7 +67,6 @@
 
   .current a {
     color: var(--accent) !important;
-    font-weight: bold;
   }
 
 
@@ -99,6 +102,10 @@
   .title {
     line-height: 50px;
     margin-left: 15px;
+    text-decoration: none;
+  }
+
+  .title h1{
     color: var(--main);
   }
 
@@ -134,7 +141,6 @@
 
   .current a {
     color: var(--accent) !important;
-    font-weight: bold;
   }
 
   .nav .sns {
@@ -168,7 +174,11 @@
 
   .title {
     line-height: 50px;
+    text-decoration: none;
     margin-left: 15px;
+  }
+
+  .title h1{
     color: var(--main);
   }
 
@@ -234,6 +244,5 @@
 
   .current a {
     color: var(--accent) !important;
-    font-weight: bold;
   }
 }

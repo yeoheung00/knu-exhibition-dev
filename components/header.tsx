@@ -25,7 +25,7 @@ export default function Header(){
   }
   return(
     <div className={styles.root}>
-      <h1 className={styles.title}>PIECE OF CAKE</h1>
+      <Link className={styles.title} href="/"><h1>PIECE OF CAKE</h1></Link>
 
       <img className={styles.opener} src='/icons/Hamburger.svg' onClick={open}/>
       <nav className={`${styles.nav} ${isOpen?styles.active:null}`}>
@@ -33,10 +33,9 @@ export default function Header(){
         <img className={styles.closer} src='/icons/Close.svg' onClick={()=>{close(); dropup();}}/>
 
         <ul>
-          <li className={`${pathname==""?styles.current:null}`}><Link onClick={close} href="/">Main</Link></li>
-          <li className={`${pathname=="aboutpage"?styles.current:null}`}><Link onClick={close} href="/aboutpage">About</Link></li>
-          <li className={`${pathname=="projectpage"?styles.current:null}`}><Link onClick={close} href="/projectpage/advertising">Project</Link></li>
-          <li className={`${pathname=="indexpage"?styles.current:null}`}><Link onClick={close} href="/indexpage">Index</Link></li>
+          <li className={`${pathname=="aboutpage"?styles.current:null}`}><Link onClick={close} href="/aboutpage">ABOUT</Link></li>
+          <li className={`${pathname=="projectpage"?styles.current:null}`}><Link onClick={close} href="/projectpage">PROJECT</Link></li>
+          <li className={`${pathname=="indexpage"?styles.current:null}`}><Link onClick={close} href="/indexpage">INDEX</Link></li>
           <li className={styles.sns}><BsInstagram/></li>
         </ul>
       </nav>

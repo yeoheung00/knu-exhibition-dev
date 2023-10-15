@@ -3,11 +3,19 @@
   padding: 0;
   margin: 0;
   outline-color: var(--accent);
+  color: var(--font);
 }
 
 html, body {
   max-width: 100vw;
-  --main: #544bce;
-  --main-glassy: #e8e7f8;
+  --main: #143FE5;
+  --main-glassy: #e7eaf6;
+  --main-hover: #102fa8;
   --accent: #ff914d;
+  --font: #253885;
+}
+
+#portal{
+  position: relative;
+  z-index: 99999;
 }

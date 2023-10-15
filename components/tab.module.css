@@ -13,7 +13,7 @@
     margin: auto;
   }
 
-  .list a{
+  .list button{
     height: 40px;
     line-height: 40px;
     text-decoration: none;
