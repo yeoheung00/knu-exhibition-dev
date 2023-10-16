@@ -68,23 +68,28 @@
 //     </div>
 //   );
 // }
-
-'use client'
 import styles from './page.module.css'
 import { allPosts } from "contentlayer/generated";
-import WorkItem from '@/components/workItem';
-import { useState } from 'react';
-import Tab from '@/components/tab';
+import Projects from '@/components/projects';
 
 export default function ProjectPage() {
   const posts = allPosts.sort();
   const subject_all = allPosts.map((item) => item.category);
   const subjectList = subject_all.filter((item, index) => { return subject_all.indexOf(item) === index }).sort();
-
-  const [current, setCurrent] = useState('advertising');
+  const workList = posts.map((item, index) => {
+    return {
+      title: item.title,
+      category: item.category,
+      designer: item.designer,
+      url: item.url
+    };
+  });
+  console.log('subjects: ', subjectList);
+  console.log('works: ', workList);
   return (
     <div className={styles.root}>
-      <Tab setCurrent={setCurrent} list={subjectList} current={current} />
+      <Projects subjectList={subjectList} workList={workList}/>
+      {/* <Tab setCurrent={setCurrent} list={subjectList} current={current} />
       <div className={styles.listViewer}>
         <div className={styles.listwrap}>
           {
@@ -97,7 +102,7 @@ export default function ProjectPage() {
             )
           }
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
