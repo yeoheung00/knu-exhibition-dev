@@ -42,7 +42,7 @@ export default function About() {
           <div className={styles.team}>
             <h3>도록</h3>
             <div className={styles.contents}>
-              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <p className={styles.partdes}>도록팀은 각자의 개성과 이야기가 담긴 졸업작품들을 책으로 엮어 기록하는 팀입니다. 24년도 졸업생들이 디자인컨버전스학과에서의 배움을 끝마치며 완성해낸 작품들을 엮어 도록을 제작하였습니다</p>
               <div className={styles.rolewrap}>
                 <div><p className={styles.role}>팀장</p><p className={styles.member}>변지은(시각)</p></div>
                 <div><p className={styles.role}>팀원</p><p className={styles.member}>민주혜(시각)<br />이다연(시각)<br />이정미(제품)<br />이지우(시각)<br />이해지(시각)</p></div>

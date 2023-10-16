@@ -38,11 +38,13 @@
   .sort {
     background-color: transparent;
     border: 1px solid white;
-    height: 28px;
-    padding: 0 8px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 12px;
     color: white;
+    font-size: large;
     margin-right: 20px;
-    border-radius: 8px;
+    border-radius: 16px;
   }
 
   .sort:hover {
@@ -64,18 +66,19 @@
   }
 
   .searchwrap img {
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
     margin-right: 4px;
   }
 
   .searchwrap input {
     width: 200px;
-    height: 28px;
+    height: 40px;
     background-color: var(--main-glassy);
     border: 1px solid white;
     border-radius: 8px;
-    padding-left: 4px;
+    padding-left: 8px;
+    font-size: large;
     color: var(--main);
   }
 
@@ -105,18 +108,24 @@
   .now {
     background-color: transparent;
     border: 1px solid white;
-    width: 80px;
-    height: 36px;
-    padding: 0 8px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 12px;
     color: white;
+    font-size: large;
     margin-right: 20px;
-    border-radius: 8px;
+    border-radius: 16px;
+  }
+
+  .now:hover {
+    background-color: rgba(255, 255, 255, 0.4);
   }
 
   .list {
     display: none;
     position: absolute;
-    top: 38px;
+    top: 60px;
+    right: 20px;
     z-index: 1111;
     background-color: white;
     border-radius: 8px;
@@ -130,7 +139,8 @@
   .list button {
     display: block;
     border: none;
-    width: 80px;
+    font-size: large;
+    width: 120px;
     height: 48px;
     background-color: transparent;
   }
@@ -186,6 +196,7 @@
     background-color: var(--main-glassy);
     border: 1px solid white;
     border-radius: 8px;
+    font-size: large;
     padding-left: 4px;
     margin-right: 12px;
     color: var(--main);

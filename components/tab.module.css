@@ -15,7 +15,7 @@
 
   .list button{
     height: 40px;
-    line-height: 40px;
+    line-height: 38px;
     text-decoration: none;
     background-color: transparent;
     color: white;
@@ -26,19 +26,18 @@
     padding: 0 12px;
   }
 
-  .list .active{
+
+  .list button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .list button.active{
     color: var(--main);
     background-color: white;
   }
 
   .selected{
     display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .list{
-    overflow-x: scroll;
   }
 }
 
