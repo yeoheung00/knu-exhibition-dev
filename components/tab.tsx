@@ -27,7 +27,7 @@ export default function Tab({setCurrent, list, current}: PropType) {
   }
   return (
     <div className={styles.root}>
-      <button className={styles.selected} onClick={toggle}>{current.toUpperCase()}  {open ? <FaCaretUp /> : <FaCaretDown />}</button>
+      <button className={styles.selected} onClick={toggle}>{current.toUpperCase()}  {open ? <FaCaretUp style={{color: "white"}} /> : <FaCaretDown style={{color: "white"}} />}</button>
       <div className={`${styles.list} ${open ? styles.open : null}`}>
         {
           list.map((item, index)=>
