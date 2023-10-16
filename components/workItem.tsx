@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styles from './workItem.module.css'
-import { Post } from 'contentlayer/generated';
 import graduate from 'db/graduate.json'
 import Image from 'next/image';
 

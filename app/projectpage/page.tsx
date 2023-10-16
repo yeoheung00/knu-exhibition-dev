@@ -83,12 +83,16 @@ export default function ProjectPage() {
       designer: item.designer,
       url: item.url
     };
+  }).sort((a, b) => {
+    if (a.title > b.title) return 1;
+    if (a.title < b.title) return -1;
+    return 0;
   });
   console.log('subjects: ', subjectList);
   console.log('works: ', workList);
   return (
     <div className={styles.root}>
-      <Projects subjectList={subjectList} workList={workList}/>
+      <Projects subjectList={subjectList} workList={workList} />
       {/* <Tab setCurrent={setCurrent} list={subjectList} current={current} />
       <div className={styles.listViewer}>
         <div className={styles.listwrap}>
