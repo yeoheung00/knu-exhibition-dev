@@ -1,6 +1,10 @@
 .root{
   padding-top: 120px;
   width: 100vw;
+  height: 100vh;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile{
@@ -58,4 +62,16 @@
   font-weight: bold;
   font-size: x-large;
   margin-left: 20px;
+}
+
+.worklist{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--main-glassy);
+  justify-content: center;
+  align-items: center;
 }
