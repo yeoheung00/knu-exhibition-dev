@@ -95,6 +95,51 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
 
   function random() {
     console.log('random', randomData.x, randomData.y, randomData.direction);
+    const unit =  windowResolution.width / sizeResolution.width;
+    let count = 0;
+    const v = 50;
+    switch(randomData.direction){
+      case 'left':
+        setLeftValue(-unit);
+        const left = setInterval(()=>{
+          if(count >= 4){
+            setLeftValue(0);
+            clearInterval(left);
+          } else setLeftValue(prev => prev - unit);
+          count++;
+        }, v)
+        break;
+      case 'right':
+        setLeftValue(unit*-5);
+        const right = setInterval(()=>{
+          if(count >= 5){
+            setLeftValue(0);
+            clearInterval(right);
+          } else setLeftValue(prev => prev + unit);
+          count++;
+        }, v)
+        break;
+      case 'up':
+        setTopValue(-unit);
+        const up = setInterval(()=>{
+          if(count >= 4){
+            setTopValue(0);
+            clearInterval(up);
+          } else setTopValue(prev => prev - unit);
+          count++;
+        }, v)
+        break;
+      case 'down':
+        setTopValue(unit*-5);
+        const down = setInterval(()=>{
+          if(count >= 5){
+            setTopValue(0);
+            clearInterval(down);
+          } else setTopValue(prev => prev + unit);
+          count++;
+        }, v)
+        break;
+    }
   }
 
   useEffect(() => {

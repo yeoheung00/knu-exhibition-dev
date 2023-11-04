@@ -1,7 +1,7 @@
 'use client'
 import styles from './interactive.module.css'
 import Segment from 'components/main/segment'
-import { MouseEvent, useEffect, useState } from 'react'
+import { MouseEvent, TouchEvent, useEffect, useState } from 'react'
 
 export default function Home() {
   const backgroundResolution = { width: 1360, height: 1920 };
@@ -152,6 +152,26 @@ export default function Home() {
     }
   }
 
+  const handlerTouchMove = (event: TouchEvent) => {
+    if (isClicked) {
+      const touch = event.touches[0];
+      const movedX = Math.floor(touch.clientX / (windowResolution.width / resolution.width));
+      const movedY = Math.floor((touch.clientY-60) / (windowResolution.height / resolution.height));
+      if(movedX != prev.x || movedY != prev.y){
+        let direction = '';
+        if(movedX > prev.x) direction = 'right';
+        if(movedX < prev.x) direction = 'left';
+        if(movedY > prev.y) direction = 'down';
+        if(movedY < prev.y) direction = 'up';
+        setAnimation({x: prev.x, y: prev.y, direction: direction});
+        setPrev({x: movedX, y: movedY});
+        setIsMoved(true);
+      } else {
+        setIsMoved(false);
+      }
+    }
+  }
+
 
 
   const handlerMouseUp = (event: MouseEvent) => {
@@ -162,14 +182,14 @@ export default function Home() {
   const [randomData, setRandomData] = useState({ x: 0, y: 0, direction: '' });
 
   function random() {
-    const timer = Math.floor(Math.random() * 3500) + 500;
+    const timer = Math.floor(Math.random() * 1000) + 100;
     const rx = Math.floor(Math.random() * resolution.width);
     const ry = Math.floor(Math.random() * resolution.height);
     const direction = Math.floor(Math.random() * 4);
     const directionData = ['up', 'down', 'right', 'left']
     setRandomData({ x: rx, y: ry, direction: directionData[direction] });
     setIsRandom(true);
-    setTimeout(() => { setIsRandom(false); }, 500);
+    setTimeout(() => { setIsRandom(false); }, 100);
     setTimeout(() => { random(); }, timer);
   }
 
@@ -188,7 +208,7 @@ export default function Home() {
           )}
         </div>)
       }
-      <div className={styles.feedback} onMouseDown={handlerMouseDown} onMouseUp={handlerMouseUp} onMouseMove={handlerMouseMove}/>
+      <div className={styles.feedback} onMouseDown={handlerMouseDown} onMouseUp={handlerMouseUp} onMouseMove={handlerMouseMove} onTouchMove={handlerTouchMove}/>
     </main>
   )
 }
