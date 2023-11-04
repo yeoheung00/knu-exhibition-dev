@@ -10,11 +10,6 @@ export default function Home() {
   const [segments, setSegments] = useState<{ top: number, left: number, direction: string }[][]>([]);
   const [big, setBig] = useState<{ x: number, y: number, size: number }[]>([]);
 
-  const UP = 0;
-  const RT = 1;
-  const DW = 2;
-  const LT = 3;
-
   useEffect(() => {
     //console.log('start');
     setWindowResolution({ width: window.innerWidth, height: window.innerHeight - 60 });
@@ -39,7 +34,7 @@ export default function Home() {
       tempResolution.width = 17;
       tempResolution.height = Math.round(17 * windowResolution.height / windowResolution.width);
       while (tempResolution.width > 0) {
-        if (tempResolution.width * tempResolution.height < 300) break;
+        if (tempResolution.width * tempResolution.height < 100) break;
         tempResolution.width--;
         tempResolution.height = Math.round(tempResolution.width * windowResolution.height / windowResolution.width);
       }
