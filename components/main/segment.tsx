@@ -18,9 +18,11 @@ type SegmentType = {
 export default function Segment({ coordinate, windowResolution, resolution, position, isMoved, animation, isRandom, randomData, big }: SegmentType) {
   let sizeResolution = resolution;
   let isTop = false;
+  let size = 1;
   big.forEach((data) => {
     if (Number(data.x) == coordinate.x && Number(data.y) == coordinate.y) {
       isTop = true;
+      size = data.size;
       sizeResolution = { width: resolution.width / Number(data.size), height: resolution.height / Number(data.size) }
     }
   });
@@ -269,6 +271,8 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
     }
   }, [isRandom]);
 
+  const assets = ['/x1.webp', '/x2.webp', '/x3.webp']
+
   return (
     <div style={{
       overflow: "hidden",
@@ -282,7 +286,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
       backgroundColor: "white",
       border: "1px solid white"
     }}>
-      <animated.img src='/segment.webp' alt='segment' style={
+      <animated.img src={assets[size-1]} alt='segment' style={
         {
           top,
           left,

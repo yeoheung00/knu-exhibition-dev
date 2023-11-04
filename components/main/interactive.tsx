@@ -51,7 +51,7 @@ export default function Home() {
       for (let i = 0; i < 5; i++) {
         if (count > 2000) break;
         count++;
-        const size = Math.round((Math.random() * 2 + 2));
+        const size = Math.floor(Math.random() * 2) + 2;
         const x = Math.round(Math.random() * (resolution.width - size));
         const y = Math.round(Math.random() * (resolution.height - size));
 
@@ -128,12 +128,14 @@ export default function Home() {
   const [animation, setAnimation] = useState({ x: 0, y: 0, direction: '' });
   const [isClicked, setIsClicked] = useState(false);
   const [isMoved, setIsMoved] = useState(false);
-  const [prev, setPrev] = useState({x: -1, y: -1});
+  const [prev, setPrev] = useState({x: -1, y: -1, direction: 'none'});
 
   const handlerMouseDown = (event: MouseEvent) => {
     const clickedX = Math.floor(event.clientX / (windowResolution.width / resolution.width));
     const clickedY = Math.floor((event.clientY-60) / (windowResolution.height / resolution.height));
-    setPrev({x: clickedX, y: clickedY})
+    const direction = Math.floor(Math.random() * 4);
+    const directionData = ['up', 'down', 'right', 'left']
+    setPrev({x: clickedX, y: clickedY, direction: directionData[direction]});
     setIsClicked(true);
   }
 
@@ -149,27 +151,7 @@ export default function Home() {
         if(movedY > prev.y) direction = 'down';
         if(movedY < prev.y) direction = 'up';
         setAnimation({x: prev.x, y: prev.y, direction: direction});
-        setPrev({x: movedX, y: movedY});
-        setIsMoved(true);
-      } else {
-        setIsMoved(false);
-      }
-    }
-  }
-
-  const handlerTouchMove = (event: TouchEvent) => {
-    if (isClicked) {
-      const touch = event.touches[0];
-      const movedX = Math.floor(touch.clientX / (windowResolution.width / resolution.width));
-      const movedY = Math.floor((touch.clientY-60) / (windowResolution.height / resolution.height));
-      if(movedX != prev.x || movedY != prev.y){
-        let direction = '';
-        if(movedX > prev.x) direction = 'right';
-        if(movedX < prev.x) direction = 'left';
-        if(movedY > prev.y) direction = 'down';
-        if(movedY < prev.y) direction = 'up';
-        setAnimation({x: prev.x, y: prev.y, direction: direction});
-        setPrev({x: movedX, y: movedY});
+        setPrev({x: movedX, y: movedY, direction: direction});
         setIsMoved(true);
       } else {
         setIsMoved(false);
@@ -180,6 +162,13 @@ export default function Home() {
 
 
   const handlerMouseUp = (event: MouseEvent) => {
+    if(!isMoved){
+      const clickedX = Math.floor(event.clientX / (windowResolution.width / resolution.width));
+      const clickedY = Math.floor((event.clientY-60) / (windowResolution.height / resolution.height));
+      setAnimation({x: clickedX, y: clickedY, direction: prev.direction});
+      setIsMoved(true);
+      setTimeout(()=>setIsMoved(false), 100);
+    }
     setIsClicked(false);
   }
 
@@ -213,7 +202,7 @@ export default function Home() {
           )}
         </div>)
       }
-      <div className={styles.feedback} onMouseDown={handlerMouseDown} onMouseUp={handlerMouseUp} onMouseMove={handlerMouseMove} onTouchMove={handlerTouchMove}/>
+      <div className={styles.feedback} onMouseDown={handlerMouseDown} onMouseUp={handlerMouseUp} onMouseMove={handlerMouseMove} />
     </main>
   )
 }
