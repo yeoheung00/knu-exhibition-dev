@@ -27,7 +27,7 @@ export default function Home() {
       tempResolution.width = Math.round(17 * windowResolution.width / windowResolution.height);
       tempResolution.height = 17;
       while (tempResolution.height > 0) {
-        if (tempResolution.width * tempResolution.height < 200) break;
+        if (tempResolution.width * tempResolution.height < 120) break;
         tempResolution.height--;
         tempResolution.width = Math.round(tempResolution.height * windowResolution.width / windowResolution.height);
       }
@@ -35,7 +35,7 @@ export default function Home() {
       tempResolution.width = 17;
       tempResolution.height = Math.round(17 * windowResolution.height / windowResolution.width);
       while (tempResolution.width > 0) {
-        if (tempResolution.width * tempResolution.height < 200) break;
+        if (tempResolution.width * tempResolution.height < 120) break;
         tempResolution.width--;
         tempResolution.height = Math.round(tempResolution.width * windowResolution.height / windowResolution.width);
       }

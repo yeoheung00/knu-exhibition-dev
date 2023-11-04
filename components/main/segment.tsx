@@ -282,7 +282,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
       backgroundColor: "white",
       border: "1px solid white"
     }}>
-      <animated.img src='/asset.webp' alt='segment' style={
+      <animated.img src='/segment.webp' alt='segment' style={
         {
           top,
           left,
