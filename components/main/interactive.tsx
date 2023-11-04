@@ -9,6 +9,7 @@ export default function Home() {
   const [windowResolution, setWindowResolution] = useState({ width: 0, height: 0 });
   const [segments, setSegments] = useState<{ top: number, left: number, direction: string }[][]>([]);
   const [big, setBig] = useState<{ x: number, y: number, size: number }[]>([]);
+  let side:boolean[][] = [];
 
   useEffect(() => {
     //console.log('start');
@@ -26,7 +27,7 @@ export default function Home() {
       tempResolution.width = Math.round(17 * windowResolution.width / windowResolution.height);
       tempResolution.height = 17;
       while (tempResolution.height > 0) {
-        if (tempResolution.width * tempResolution.height < 100) break;
+        if (tempResolution.width * tempResolution.height < 200) break;
         tempResolution.height--;
         tempResolution.width = Math.round(tempResolution.height * windowResolution.width / windowResolution.height);
       }
@@ -34,7 +35,7 @@ export default function Home() {
       tempResolution.width = 17;
       tempResolution.height = Math.round(17 * windowResolution.height / windowResolution.width);
       while (tempResolution.width > 0) {
-        if (tempResolution.width * tempResolution.height < 100) break;
+        if (tempResolution.width * tempResolution.height < 200) break;
         tempResolution.width--;
         tempResolution.height = Math.round(tempResolution.width * windowResolution.height / windowResolution.width);
       }
@@ -47,7 +48,7 @@ export default function Home() {
       let tempCoordinate: { x: number, y: number, size: number }[] = [];
 
       let count = 0;
-      for (let i = 0; i < 7; i++) {
+      for (let i = 0; i < 5; i++) {
         if (count > 2000) break;
         count++;
         const size = Math.round((Math.random() * 2 + 2));
@@ -102,7 +103,10 @@ export default function Home() {
     let segments_temp: { top: number, left: number, direction: string }[][] = [];
     for (let y = 0; y < resolution.height; y++) {
       let row_temp: { top: number, left: number, direction: string }[] = [];
+      let row_side: boolean[] = [];
       for (let x = 0; x < resolution.width; x++) {
+        let randomSide = Math.floor(Math.random() * 10);
+        row_side.push(randomSide != 7);
         let top = 0;
         let left = 0;
         if (direction === "height") {
@@ -115,6 +119,7 @@ export default function Home() {
         }
         row_temp.push({ top: top, left: left, direction: direction });
       }
+      side.push(row_side);
       segments_temp.push(row_temp);
     }
     setSegments(segments_temp);
@@ -203,7 +208,7 @@ export default function Home() {
             width: windowResolution.width / resolution.width + "px",
             height: windowResolution.height / resolution.height + "px"
           }}>
-            <Segment coordinate={{ x: col_idx, y: row_idx }} windowResolution={windowResolution} resolution={resolution} position={segments[row_idx][col_idx]} isMoved={isMoved} animation={animation} isRandom={isRandom} randomData={randomData} big={big} />
+            <Segment coordinate={{ x: col_idx, y: row_idx }} windowResolution={windowResolution} resolution={resolution} position={col} isMoved={isMoved} animation={animation} isRandom={isRandom} randomData={randomData} big={big} />
           </div>)
           )}
         </div>)

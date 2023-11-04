@@ -25,6 +25,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
     }
   });
 
+  const [front, setFront] = useState(true);
   const [topValue, setTopValue] = useState(0);
   const [leftValue, setLeftValue] = useState(0);
 
@@ -41,42 +42,102 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
     const v = 50;
     switch(animation.direction){
       case 'left':
-        setLeftValue(-unit);
+        setTopValue(front?0:-unit);
+        setLeftValue(front?-unit:-unit*5);
         const left = setInterval(()=>{
           if(count >= 4){
-            setLeftValue(0);
+            if(front){
+              setLeftValue(0);
+              setTopValue(-unit);
+              setFront(false);
+            } else {
+              setLeftValue(0);
+              setTopValue(0);
+              setFront(true);
+            }
             clearInterval(left);
-          } else setLeftValue(prev => prev - unit);
+          } else {
+            if(front){
+              setLeftValue(prev => prev - unit);
+            } else {
+              setLeftValue(prev => prev + unit);
+            }
+          }
           count++;
         }, v)
         break;
       case 'right':
-        setLeftValue(unit*-5);
+        setTopValue(front?-unit:0);
+        setLeftValue(front?-unit:-unit*5);
         const right = setInterval(()=>{
-          if(count >= 5){
-            setLeftValue(0);
+          if(count >= 4){
+            if(front){
+              setLeftValue(0);
+              setTopValue(-unit);
+              setFront(false);
+            } else {
+              setLeftValue(0);
+              setTopValue(0);
+              setFront(true);
+            }
             clearInterval(right);
-          } else setLeftValue(prev => prev + unit);
+          } else {
+            if(front){
+              setLeftValue(prev => prev - unit);
+            } else {
+              setLeftValue(prev => prev + unit);
+            }
+          }
           count++;
         }, v)
         break;
       case 'up':
-        setTopValue(-unit);
+        setTopValue(front?-unit*3:-unit*2);
+        setLeftValue(front?-unit:-unit*5);
         const up = setInterval(()=>{
           if(count >= 4){
-            setTopValue(0);
+            if(front){
+              setLeftValue(0);
+              setTopValue(-unit);
+              setFront(false);
+            } else {
+              setLeftValue(0);
+              setTopValue(0);
+              setFront(true);
+            }
             clearInterval(up);
-          } else setTopValue(prev => prev - unit);
+          } else {
+            if(front){
+              setLeftValue(prev => prev - unit);
+            } else {
+              setLeftValue(prev => prev + unit);
+            }
+          }
           count++;
         }, v)
         break;
       case 'down':
-        setTopValue(unit*-5);
+        setTopValue(front?-unit*2:-unit*3);
+        setLeftValue(front?-unit:-unit*5);
         const down = setInterval(()=>{
-          if(count >= 5){
-            setTopValue(0);
+          if(count >= 4){
+            if(front){
+              setLeftValue(0);
+              setTopValue(-unit);
+              setFront(false);
+            } else {
+              setLeftValue(0);
+              setTopValue(0);
+              setFront(true);
+            }
             clearInterval(down);
-          } else setTopValue(prev => prev + unit);
+          } else {
+            if(front){
+              setLeftValue(prev => prev - unit);
+            } else {
+              setLeftValue(prev => prev + unit);
+            }
+          }
           count++;
         }, v)
         break;
@@ -100,42 +161,102 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
     const v = 50;
     switch(randomData.direction){
       case 'left':
-        setLeftValue(-unit);
+        setTopValue(front?0:-unit);
+        setLeftValue(front?-unit:-unit*5);
         const left = setInterval(()=>{
           if(count >= 4){
-            setLeftValue(0);
+            if(front){
+              setLeftValue(0);
+              setTopValue(-unit);
+              setFront(false);
+            } else {
+              setLeftValue(0);
+              setTopValue(0);
+              setFront(true);
+            }
             clearInterval(left);
-          } else setLeftValue(prev => prev - unit);
+          } else {
+            if(front){
+              setLeftValue(prev => prev - unit);
+            } else {
+              setLeftValue(prev => prev + unit);
+            }
+          }
           count++;
         }, v)
         break;
       case 'right':
-        setLeftValue(unit*-5);
+        setTopValue(front?-unit:0);
+        setLeftValue(front?-unit:-unit*5);
         const right = setInterval(()=>{
-          if(count >= 5){
-            setLeftValue(0);
+          if(count >= 4){
+            if(front){
+              setLeftValue(0);
+              setTopValue(-unit);
+              setFront(false);
+            } else {
+              setLeftValue(0);
+              setTopValue(0);
+              setFront(true);
+            }
             clearInterval(right);
-          } else setLeftValue(prev => prev + unit);
+          } else {
+            if(front){
+              setLeftValue(prev => prev - unit);
+            } else {
+              setLeftValue(prev => prev + unit);
+            }
+          }
           count++;
         }, v)
         break;
       case 'up':
-        setTopValue(-unit);
+        setTopValue(front?-unit*3:-unit*2);
+        setLeftValue(front?-unit:-unit*5);
         const up = setInterval(()=>{
           if(count >= 4){
-            setTopValue(0);
+            if(front){
+              setLeftValue(0);
+              setTopValue(-unit);
+              setFront(false);
+            } else {
+              setLeftValue(0);
+              setTopValue(0);
+              setFront(true);
+            }
             clearInterval(up);
-          } else setTopValue(prev => prev - unit);
+          } else {
+            if(front){
+              setLeftValue(prev => prev - unit);
+            } else {
+              setLeftValue(prev => prev + unit);
+            }
+          }
           count++;
         }, v)
         break;
       case 'down':
-        setTopValue(unit*-5);
+        setTopValue(front?-unit*2:-unit*3);
+        setLeftValue(front?-unit:-unit*5);
         const down = setInterval(()=>{
-          if(count >= 5){
-            setTopValue(0);
+          if(count >= 4){
+            if(front){
+              setLeftValue(0);
+              setTopValue(-unit);
+              setFront(false);
+            } else {
+              setLeftValue(0);
+              setTopValue(0);
+              setFront(true);
+            }
             clearInterval(down);
-          } else setTopValue(prev => prev + unit);
+          } else {
+            if(front){
+              setLeftValue(prev => prev - unit);
+            } else {
+              setLeftValue(prev => prev + unit);
+            }
+          }
           count++;
         }, v)
         break;
@@ -158,16 +279,16 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
       justifyContent: "center",
       position: "relative",
       zIndex: isTop ? 999 : 0,
-      backgroundColor: "red",
+      backgroundColor: "white",
       border: "1px solid white"
     }}>
-      <animated.img src='/Asset1.png' alt='segment' style={
+      <animated.img src='/asset.webp' alt='segment' style={
         {
           top,
           left,
           position: "absolute",
           width: windowResolution.width / sizeResolution.width * 6 + "px",
-          height: windowResolution.width / sizeResolution.width * 6 + "px",
+          height: windowResolution.width / sizeResolution.width * 4 + "px",
           transition: '0s'
         }
       } />
