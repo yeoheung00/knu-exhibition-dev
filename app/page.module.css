@@ -1,6 +1,7 @@
 @media screen and (min-width: 1240px){
   .root{
-    
+    overflow: hidden;
+    padding-top: 60px;
   }
 
   .title{
