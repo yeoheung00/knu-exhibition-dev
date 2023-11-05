@@ -34,9 +34,9 @@ export default function Header(){
           cursor: 'pointer'
       }}>
       <div style={{
-          maskImage: 'url("/icons/menu.svg")',
+          maskImage: 'url("/icons/hamburger.svg")',
           maskSize: '24px',
-          WebkitMaskImage: 'url("/icons/menu.svg")',
+          WebkitMaskImage: 'url("/icons/hamburger.svg")',
           WebkitMaskSize: '24px',
           backgroundColor: 'var(--main)',
           width: '24px',
