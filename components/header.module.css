@@ -14,13 +14,14 @@
   }
 
   .title {
-    line-height: 48px;
-    margin-left: 15px;
-    text-decoration: none;
+    height: 48px;
+    flex: 1;
+    padding: 8px;
   }
 
-  .title h1{
-    color: var(--main);
+  .title img{
+    height: 32px;
+    width: auto;
   }
 
   .nav ul{
@@ -88,13 +89,14 @@
   }
 
   .title {
-    line-height: 48px;
-    text-decoration: none;
-    margin-left: 15px;
+    height: 48px;
+    flex: 1;
+    padding: 8px;
   }
 
-  .title h1{
-    color: var(--main);
+  .title img{
+    height: 32px;
+    width: auto;
   }
 
   .nav {

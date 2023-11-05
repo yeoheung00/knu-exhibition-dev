@@ -24,7 +24,7 @@ export default function Header(){
   }
   return(
     <div className={styles.root}>
-      <Link className={styles.title} href="/"><h1>PIECE OF CAKE</h1></Link>
+      <Link className={styles.title} href="/"><img src='/title.svg' alt='title'/></Link>
 
       <div className={styles.opener} onClick={open} style={{
           padding: '12px',

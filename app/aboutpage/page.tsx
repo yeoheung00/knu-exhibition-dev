@@ -13,7 +13,7 @@ export default function About() {
         <div className={styles.des}>
           <div className={styles.text}>
             <div className={styles.title}>
-              <Title title={<h2>"PIECE OF CAKE"</h2>} align='left' />
+              <Title title="PIECE OF CAKE" />
             </div>
             <p>
               작업물은 우리를 나타내는 개개인의 ‘조각(Piece)’입니다.
@@ -37,7 +37,7 @@ export default function About() {
         </div>
       </div>
 
-      <Title title={<h2>졸업준비위원회 조직도</h2>} align='left' />
+      <Title title="졸업준비위원회 조직도"/>
       <div className={styles.teamwrap}>
         <div className={styles.team}>
           <h3>졸업준비위원회</h3>
@@ -113,7 +113,7 @@ export default function About() {
         </div>
       </div>
 
-      <Title title={<h2>오프라인 전시</h2>} align='left' />
+      <Title title="오프라인 전시" />
       <div className={styles.offline}>
         <div className={styles.infowrap}>
           <div className={styles.info}>
