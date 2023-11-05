@@ -34,9 +34,9 @@ export default function Header(){
           cursor: 'pointer'
       }}>
       <div style={{
-          maskImage: 'url("/icons/hamburger.svg")',
+          maskImage: 'url("/icons/menu.svg")',
           maskSize: '24px',
-          WebkitMaskImage: 'url("/icons/hamburger.svg")',
+          WebkitMaskImage: 'url("/icons/menu.svg")',
           WebkitMaskSize: '24px',
           backgroundColor: 'var(--main)',
           width: '24px',
@@ -67,9 +67,9 @@ export default function Header(){
           <li className={`${pathname=="projectpage"?styles.current:null}`}><Link onClick={close} href="/projectpage">PROJECT</Link></li>
           <li className={`${pathname=="indexpage"?styles.current:null}`}><Link onClick={close} href="/indexpage">INDEX</Link></li>
           <li><Link className={styles.sns} href='https://www.instagram.com/knu_piece_of_cake/' target="_blank"><div style={{
-            maskImage: 'url("/icons/instagram_Glyph_Black.svg")',
+            maskImage: 'url("/icons/instagram.svg")',
             maskSize: '24px',
-            WebkitMaskImage: 'url("/icons/instagram_Glyph_Black.svg")',
+            WebkitMaskImage: 'url("/icons/instagram.svg")',
             WebkitMaskSize: '24px',
             width: '24px',
             height: '24px'
