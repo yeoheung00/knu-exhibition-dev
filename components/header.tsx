@@ -27,10 +27,40 @@ export default function Header(){
     <div className={styles.root}>
       <Link className={styles.title} href="/"><h1>PIECE OF CAKE</h1></Link>
 
-      <img className={styles.opener} src='/icons/Hamburger.svg' onClick={open}/>
+      <div className={styles.opener} onClick={open} style={{
+          padding: '12px',
+          width: '48px',
+          height: '48px',
+          cursor: 'pointer'
+      }}>
+      <div style={{
+          maskImage: 'url(/icons/hamburger.svg)',
+          maskSize: '24px',
+          WebkitMaskImage: 'url(/icons/hamburger.svg)',
+          WebkitMaskSize: '24px',
+          backgroundColor: 'var(--main)',
+          width: '24px',
+          height: '24px'
+
+      }}/>
+      </div>
       <nav className={`${styles.nav} ${isOpen?styles.active:null}`}>
 
-        <img className={styles.closer} src='/icons/Close.svg' onClick={()=>{close(); dropup();}}/>
+        <div className={styles.closer} onClick={()=>{close(); dropup();}} style={{
+          padding: '12px',
+          width: '48px',
+          height: '48px'
+        }}>
+          <div style={{
+          maskImage: 'url(/icons/closer.svg)',
+          maskSize: '24px',
+          WebkitMaskImage: 'url(/icons/closer.svg)',
+          WebkitMaskSize: '24px',
+          backgroundColor: '#ffffff',
+          width: '24px',
+          height: '24px'
+        }}/>
+        </div>
 
         <ul>
           <li className={`${pathname=="aboutpage"?styles.current:null}`}><Link onClick={close} href="/aboutpage">ABOUT</Link></li>

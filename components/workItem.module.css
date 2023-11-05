@@ -1,54 +1,80 @@
-.root{
-  width: 300px;
-  height: 300px;
-  border-radius: 16px;
-  position: relative;
-  overflow: hidden;
-  color: white;
-}
-
-.thumb{
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.title{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  opacity: 0;
-  transition: opacity 0.3s;
-  color: white;
-  text-shadow: 0 0 10px var(--main);
-}
-
-.designer{
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  opacity: 0;
-  transition: opacity 0.3s;
-  color: white;
-  text-shadow: 0 0 5px var(--main);
-}
-
-.root:hover .title, .root:hover .designer{
-  opacity: 1;
-}
-
-@media screen and (max-width: 767px){
+@media screen and (min-width: 768px) {
   .root{
-    width: calc((100vw - 30px)/2);
-    height: calc((100vw - 30px)/2);
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    position: relative;
+    transition: border-radius 0.3s;
+  }
+
+  .root:hover{
+    border-radius: 16px;
   }
 
   .thumb{
-    width: calc((100vw - 30px)/2);
-    height: calc((100vw - 30px)/2);
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
   }
 
-  .title, .designer{
+  .des{
     opacity: 0;
+    position: absolute;
+    width: 100%;
+    padding: 16px;
+    left: 0px;
+    bottom: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .root:hover .des{
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .root{
+    overflow: hidden;
+    width: calc((100% - 10px) / 2);
+    height: 0;
+    padding-bottom: calc(50% - 5px);
+    border-radius: 4px;
+    position: relative;
+    background-color: aqua;
+  }
+
+  .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .thumb{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .des{
+    position: absolute;
+    width: 100%;
+    padding: 16px;
+    left: 0px;
+    bottom: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 }

@@ -1,7 +1,8 @@
 import styles from './page.module.css'
 import { allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
-import ImageViewer from '@/components/ImageViewer'
+import ImageViewer from '@/components/mdx/ImageViewer'
+import Book from '@/components/mdx/Book'
 import Link from 'next/link'
 import graduate from 'db/graduate.json'
 
@@ -27,7 +28,7 @@ export default function ProjectIndex({ params }: { params: { index: string } }) 
 
         </div>
         <div className={styles.markdown}>
-          <Content components={{ ImageViewer }} />
+          <Content components={{ ImageViewer, Book }} />
         </div>
         <div className={styles.footer}>
           <h2>{Designer} 학생의 더 많은 작품 보러가기</h2>

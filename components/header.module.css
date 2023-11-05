@@ -96,7 +96,7 @@
     align-items: center;
     backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, 0.4);
-    z-index: 1111;
+    z-index: 9999;
   }
 
   .title {
@@ -169,7 +169,7 @@
     background-color: rgba(255, 255, 255, 0.4);
     justify-content: space-between;
     align-items: center;
-    z-index: 1111;
+    z-index: 9999;
   }
 
   .title {

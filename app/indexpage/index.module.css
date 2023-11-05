@@ -14,7 +14,7 @@
   width: 100%;
   height: calc(100vh - 120px);
   background-color: var(--main-glassy);
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .listwrap {
