@@ -34,9 +34,9 @@ export default function Header(){
           cursor: 'pointer'
       }}>
       <div style={{
-          maskImage: 'url(/icons/hamburger.svg)',
+          maskImage: 'url("/icons/hamburger.svg")',
           maskSize: '24px',
-          WebkitMaskImage: 'url(/icons/hamburger.svg)',
+          WebkitMaskImage: 'url("/icons/hamburger.svg")',
           WebkitMaskSize: '24px',
           backgroundColor: 'var(--main)',
           width: '24px',
@@ -52,9 +52,9 @@ export default function Header(){
           height: '48px'
         }}>
           <div style={{
-          maskImage: 'url(/icons/closer.svg)',
+          maskImage: 'url("/icons/closer.svg")',
           maskSize: '24px',
-          WebkitMaskImage: 'url(/icons/closer.svg)',
+          WebkitMaskImage: 'url("/icons/closer.svg")',
           WebkitMaskSize: '24px',
           backgroundColor: '#ffffff',
           width: '24px',
@@ -67,9 +67,9 @@ export default function Header(){
           <li className={`${pathname=="projectpage"?styles.current:null}`}><Link onClick={close} href="/projectpage">PROJECT</Link></li>
           <li className={`${pathname=="indexpage"?styles.current:null}`}><Link onClick={close} href="/indexpage">INDEX</Link></li>
           <li><Link className={styles.sns} href='https://www.instagram.com/knu_piece_of_cake/' target="_blank"><div style={{
-            maskImage: 'url(/icons/instagram_Glyph_Black.svg)',
+            maskImage: 'url("/icons/instagram_Glyph_Black.svg")',
             maskSize: '24px',
-            WebkitMaskImage: 'url(/icons/instagram_Glyph_Black.svg)',
+            WebkitMaskImage: 'url("/icons/instagram_Glyph_Black.svg")',
             WebkitMaskSize: '24px',
             width: '24px',
             height: '24px'
