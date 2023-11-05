@@ -118,7 +118,7 @@ export default function About() {
         <div className={styles.infowrap}>
           <div className={styles.info}>
             <h3>일시</h3>
-            <p>2023. 12. 7. ~<br />2023. 12. 11.</p>
+            <p>2023. 12. 7. ~<br />2023. 12. 12.</p>
           </div>
           <div className={styles.info}>
             <h3>장소</h3>

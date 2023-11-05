@@ -9,6 +9,7 @@ export default function Projects({ subjectList, workList }: { subjectList: strin
   return (
     <div className={styles.root}>
       <Tab list={subjectList} current={current} setCurrent={setCurrent} />
+      <div className={styles.divider}/>
       <div className={styles.listViewer}>
         <div className={styles.listwrap}>
           {

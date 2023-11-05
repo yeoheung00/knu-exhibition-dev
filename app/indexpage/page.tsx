@@ -62,9 +62,9 @@ export default function Profile() {
         <div className={`${styles.searchwrap} ${search ? styles.active : null}`}>
           <button className={`${styles.search} ${search ? styles.active : null}`} onClick={openSearch}>
             <div style={{
-              maskImage: "url('/icons/search.svg')",
+              maskImage: "url('/icons/searching.svg')",
               maskSize: "24px",
-              WebkitMaskImage: "url('/icons/search.svg')",
+              WebkitMaskImage: "url('/icons/searching.svg')",
               WebkitMaskSize: "24px",
               backgroundColor: "white",
               width: "24px",

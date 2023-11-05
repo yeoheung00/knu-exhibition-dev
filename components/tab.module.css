@@ -1,6 +1,8 @@
 @media screen and (min-width: 768px) {
   .root{
-    background-color: var(--main);
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
   }
 
   .list {
@@ -14,14 +16,13 @@
   }
 
   .list button{
-    height: 40px;
-    line-height: 38px;
-    text-decoration: none;
+    height: 32px;
+    line-height: 28px;
     background-color: transparent;
-    color: white;
+    color: var(--main);
     white-space: nowrap;
-    font-size: large;
-    border: 1px solid white;
+    font-size: medium;
+    border: 2px solid var(--main);
     border-radius: 16px;
     padding: 0 12px;
   }
@@ -32,8 +33,8 @@
   }
 
   .list button.active{
-    color: var(--main);
-    background-color: white;
+    color: white;
+    background-color: var(--main);
   }
 
   .selected{

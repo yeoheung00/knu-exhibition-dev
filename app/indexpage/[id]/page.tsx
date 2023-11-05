@@ -25,7 +25,7 @@ export default function Page({ params }: { params: { id: number } }) {
             </div>
           </div>
           <p>{db[id].des}</p>
-          <h2 className={styles.awardTitle}>수상경력</h2>
+          <h2 className={styles.awardTitle}>수상경력 및 대외활동</h2>
           <ul className={styles.awards}>
             {
               db[id].awards.split('|').map((award, idx) => (
