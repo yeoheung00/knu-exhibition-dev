@@ -67,9 +67,9 @@ export default function Header(){
           <li className={`${pathname=="projectpage"?styles.current:null}`}><Link onClick={close} href="/projectpage">PROJECT</Link></li>
           <li className={`${pathname=="indexpage"?styles.current:null}`}><Link onClick={close} href="/indexpage">INDEX</Link></li>
           <li><Link className={styles.sns} href='https://www.instagram.com/knu_piece_of_cake/' target="_blank"><div style={{
-            maskImage: 'url("/icons/instagram.svg")',
+            maskImage: 'url("/icons/insta.svg")',
             maskSize: '24px',
-            WebkitMaskImage: 'url("/icons/instagram.svg")',
+            WebkitMaskImage: 'url("/icons/insta.svg")',
             WebkitMaskSize: '24px',
             width: '24px',
             height: '24px'
