@@ -63,10 +63,10 @@
   }
 
   .rolewrap{
-    width: 180px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: end;
   }
 
   .rolewrap div{
@@ -75,13 +75,13 @@
   }
 
   .role{
-    width: 70px;
     text-align: right;
     font-weight: bold;
+    white-space: no-wrap;
   }
 
   .member{
-    width: 100px;
+    white-space: no-wrap;
   }
 
   /* member end */
@@ -168,10 +168,10 @@
   }
 
   .rolewrap{
-    width: 180px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: end;
   }
 
   .rolewrap div{
@@ -180,13 +180,13 @@
   }
 
   .role{
-    width: 70px;
     text-align: right;
     font-weight: bold;
+    white-space: no-wrap;
   }
 
   .member{
-    width: 100px;
+    white-space: no-wrap;
   }
 
   /* member end */
@@ -199,8 +199,9 @@
   }
 
   .infowrap{
-    width: 100%;
+    width: 300px;
     display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 
