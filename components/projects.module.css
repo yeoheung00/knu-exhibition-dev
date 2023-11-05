@@ -1,5 +1,5 @@
 .root {
-  padding-top: 60px;
+  padding-top: 48px;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -25,7 +25,7 @@
   .listwrap {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
+    gap: 20px;
+    padding: 20px;
   }
 }
