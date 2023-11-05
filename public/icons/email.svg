@@ -1,6 +1,1 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="5.5" y="5.5" width="21" height="21" rx="4.5" stroke="black" stroke-width="3"/>
-<path d="M6 13L12.5592 17.5915C14.6251 19.0376 17.3749 19.0376 19.4408 17.5915L26 13" stroke="black" stroke-width="3"/>
-<path d="M8 26L13 17" stroke="black" stroke-width="3"/>
-<path d="M19 17L24 26" stroke="black" stroke-width="3"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{stroke:#000;stroke-linejoin:round;stroke-width:2px;}.cls-1,.cls-2{fill:none;}.cls-3,.cls-2{stroke-width:0px;}</style></defs><g id="Layer_1-2"><path class="cls-3" d="m20,6v12H4V6h16m0-2H4c-1.1,0-2,.9-2,2v12c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2V6c0-1.1-.9-2-2-2h0Z"/><polyline class="cls-1" points="3 9 12 13 21 9"/><rect class="cls-2" width="24" height="24"/></g></svg>

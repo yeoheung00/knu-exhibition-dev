@@ -12,7 +12,6 @@ export default function Home() {
   let side:boolean[][] = [];
 
   useEffect(() => {
-    //console.log('start');
     setWindowResolution({ width: window.innerWidth, height: window.innerHeight - 60 });
     window.addEventListener("resize", () => {
       setWindowResolution({ width: window.innerWidth, height: window.innerHeight - 60 });
@@ -21,7 +20,6 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    //console.log('windowResolution', windowResolution);
     let tempResolution = { width: 17, height: 17 };
     if (windowResolution.width > windowResolution.height) {
       tempResolution.width = Math.round(17 * windowResolution.width / windowResolution.height);
@@ -66,7 +64,6 @@ export default function Home() {
           }
         };
       }
-      // console.log(count);
       setBig(tempCoordinate);
     }
 

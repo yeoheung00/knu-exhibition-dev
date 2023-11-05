@@ -31,24 +31,34 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
   const [topValue, setTopValue] = useState(0);
   const [leftValue, setLeftValue] = useState(0);
 
-  const {top, left} = useSpring({
+  useEffect(() => {
+    const unit = windowResolution.width / sizeResolution.width;
+    if (front) {
+      setLeftValue(0);
+      setTopValue(0);
+    } else {
+      setLeftValue(0);
+      setTopValue(-unit);
+    }
+  }, [windowResolution]);
+
+  const { top, left } = useSpring({
     top: topValue + 'px',
     left: leftValue + 'px',
-    config: {duration: 0}
+    config: { duration: 0 }
   })
 
   function animate() {
-    console.log('animated', animation.x, animation.y, animation.direction);
-    const unit =  windowResolution.width / sizeResolution.width;
+    const unit = windowResolution.width / sizeResolution.width;
     let count = 0;
     const v = 50;
-    switch(animation.direction){
+    switch (animation.direction) {
       case 'left':
-        setTopValue(front?0:-unit);
-        setLeftValue(front?-unit:-unit*5);
-        const left = setInterval(()=>{
-          if(count >= 4){
-            if(front){
+        setTopValue(front ? 0 : -unit);
+        setLeftValue(front ? -unit : -unit * 5);
+        const left = setInterval(() => {
+          if (count >= 4) {
+            if (front) {
               setLeftValue(0);
               setTopValue(-unit);
               setFront(false);
@@ -59,7 +69,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
             }
             clearInterval(left);
           } else {
-            if(front){
+            if (front) {
               setLeftValue(prev => prev - unit);
             } else {
               setLeftValue(prev => prev + unit);
@@ -69,11 +79,11 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
         }, v)
         break;
       case 'right':
-        setTopValue(front?-unit:0);
-        setLeftValue(front?-unit:-unit*5);
-        const right = setInterval(()=>{
-          if(count >= 4){
-            if(front){
+        setTopValue(front ? -unit : 0);
+        setLeftValue(front ? -unit : -unit * 5);
+        const right = setInterval(() => {
+          if (count >= 4) {
+            if (front) {
               setLeftValue(0);
               setTopValue(-unit);
               setFront(false);
@@ -84,7 +94,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
             }
             clearInterval(right);
           } else {
-            if(front){
+            if (front) {
               setLeftValue(prev => prev - unit);
             } else {
               setLeftValue(prev => prev + unit);
@@ -94,11 +104,11 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
         }, v)
         break;
       case 'up':
-        setTopValue(front?-unit*3:-unit*2);
-        setLeftValue(front?-unit:-unit*5);
-        const up = setInterval(()=>{
-          if(count >= 4){
-            if(front){
+        setTopValue(front ? -unit * 3 : -unit * 2);
+        setLeftValue(front ? -unit : -unit * 5);
+        const up = setInterval(() => {
+          if (count >= 4) {
+            if (front) {
               setLeftValue(0);
               setTopValue(-unit);
               setFront(false);
@@ -109,7 +119,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
             }
             clearInterval(up);
           } else {
-            if(front){
+            if (front) {
               setLeftValue(prev => prev - unit);
             } else {
               setLeftValue(prev => prev + unit);
@@ -119,11 +129,11 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
         }, v)
         break;
       case 'down':
-        setTopValue(front?-unit*2:-unit*3);
-        setLeftValue(front?-unit:-unit*5);
-        const down = setInterval(()=>{
-          if(count >= 4){
-            if(front){
+        setTopValue(front ? -unit * 2 : -unit * 3);
+        setLeftValue(front ? -unit : -unit * 5);
+        const down = setInterval(() => {
+          if (count >= 4) {
+            if (front) {
               setLeftValue(0);
               setTopValue(-unit);
               setFront(false);
@@ -134,7 +144,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
             }
             clearInterval(down);
           } else {
-            if(front){
+            if (front) {
               setLeftValue(prev => prev - unit);
             } else {
               setLeftValue(prev => prev + unit);
@@ -146,10 +156,6 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
     }
   }
 
-  useEffect(()=>{
-    console.log(leftValue);
-  }, [leftValue])
-
   useEffect(() => {
     if (coordinate.x === animation.x && coordinate.y === animation.y && isMoved) {
       animate();
@@ -157,17 +163,16 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
   }, [isMoved]);
 
   function random() {
-    console.log('random', randomData.x, randomData.y, randomData.direction);
-    const unit =  windowResolution.width / sizeResolution.width;
+    const unit = windowResolution.width / sizeResolution.width;
     let count = 0;
     const v = 50;
-    switch(randomData.direction){
+    switch (randomData.direction) {
       case 'left':
-        setTopValue(front?0:-unit);
-        setLeftValue(front?-unit:-unit*5);
-        const left = setInterval(()=>{
-          if(count >= 4){
-            if(front){
+        setTopValue(front ? 0 : -unit);
+        setLeftValue(front ? -unit : -unit * 5);
+        const left = setInterval(() => {
+          if (count >= 4) {
+            if (front) {
               setLeftValue(0);
               setTopValue(-unit);
               setFront(false);
@@ -178,7 +183,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
             }
             clearInterval(left);
           } else {
-            if(front){
+            if (front) {
               setLeftValue(prev => prev - unit);
             } else {
               setLeftValue(prev => prev + unit);
@@ -188,11 +193,11 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
         }, v)
         break;
       case 'right':
-        setTopValue(front?-unit:0);
-        setLeftValue(front?-unit:-unit*5);
-        const right = setInterval(()=>{
-          if(count >= 4){
-            if(front){
+        setTopValue(front ? -unit : 0);
+        setLeftValue(front ? -unit : -unit * 5);
+        const right = setInterval(() => {
+          if (count >= 4) {
+            if (front) {
               setLeftValue(0);
               setTopValue(-unit);
               setFront(false);
@@ -203,7 +208,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
             }
             clearInterval(right);
           } else {
-            if(front){
+            if (front) {
               setLeftValue(prev => prev - unit);
             } else {
               setLeftValue(prev => prev + unit);
@@ -213,11 +218,11 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
         }, v)
         break;
       case 'up':
-        setTopValue(front?-unit*3:-unit*2);
-        setLeftValue(front?-unit:-unit*5);
-        const up = setInterval(()=>{
-          if(count >= 4){
-            if(front){
+        setTopValue(front ? -unit * 3 : -unit * 2);
+        setLeftValue(front ? -unit : -unit * 5);
+        const up = setInterval(() => {
+          if (count >= 4) {
+            if (front) {
               setLeftValue(0);
               setTopValue(-unit);
               setFront(false);
@@ -228,7 +233,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
             }
             clearInterval(up);
           } else {
-            if(front){
+            if (front) {
               setLeftValue(prev => prev - unit);
             } else {
               setLeftValue(prev => prev + unit);
@@ -238,11 +243,11 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
         }, v)
         break;
       case 'down':
-        setTopValue(front?-unit*2:-unit*3);
-        setLeftValue(front?-unit:-unit*5);
-        const down = setInterval(()=>{
-          if(count >= 4){
-            if(front){
+        setTopValue(front ? -unit * 2 : -unit * 3);
+        setLeftValue(front ? -unit : -unit * 5);
+        const down = setInterval(() => {
+          if (count >= 4) {
+            if (front) {
               setLeftValue(0);
               setTopValue(-unit);
               setFront(false);
@@ -253,7 +258,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
             }
             clearInterval(down);
           } else {
-            if(front){
+            if (front) {
               setLeftValue(prev => prev - unit);
             } else {
               setLeftValue(prev => prev + unit);
@@ -286,7 +291,7 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
       backgroundColor: "white",
       border: "1px solid white"
     }}>
-      <animated.img src={assets[size-1]} alt='segment' style={
+      <animated.img src={assets[size - 1]} alt='segment' style={
         {
           top,
           left,

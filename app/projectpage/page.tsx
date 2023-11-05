@@ -18,8 +18,6 @@ export default function ProjectPage() {
     if (a.title < b.title) return -1;
     return 0;
   });
-  console.log('subjects: ', subjectList);
-  console.log('works: ', workList);
   return (
     <div className={styles.root}>
       <Projects subjectList={subjectList} workList={workList} />

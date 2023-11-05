@@ -12,7 +12,6 @@ export default function Header(){
   const [isDrop, setIsDrop] = useState(false);
   const open = () => {
     setIsOpen((current) => !current);
-    console.log(isOpen);
   }
   const close = () => {
     setIsOpen(false);

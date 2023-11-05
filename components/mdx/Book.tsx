@@ -33,7 +33,7 @@ export default function Book({ designer, project, title, page }: { designer: str
           <div key={idx} style={{
             display: current === idx ? 'block' : 'none'
           }}>
-            <Image src={`/profile/${designer}/${project}/${title}/${idx + 1}.png`} width={100} height={100} sizes="100vw" style={{ width: '100%', height: "auto", objectFit: "contain" }} alt={idx + 1 + 'th page'} onClick={toggle} />
+            <Image src={`/profile/${designer}/${project}/${title}/${idx + 1}.png`} width={100} height={50} sizes="100vw" style={{ width: '100%', height: "auto", objectFit: "contain" }} alt={idx + 1 + 'th page'} onClick={toggle} />
 
           </div>
         )

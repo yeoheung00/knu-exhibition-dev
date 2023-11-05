@@ -10,7 +10,7 @@ html, body {
   --main: #143FE5;
   --main-glassy: #e7eaf6;
   --main-hover: #102fa8;
-  --accent: #ff914d;
+  --accent: rgb(16, 158, 168);
   --font: #253885;
 }
 

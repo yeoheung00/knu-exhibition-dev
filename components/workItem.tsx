@@ -14,7 +14,7 @@ export default function WorkItem(post: PropsType) {
   return (
     <div className={styles.root}>
     <Link className={styles.container} href={post.url}>
-      <Image className={styles.thumb} src={`/profile/${post.designer}/${index}/thumb.jpg`} alt='thumbnail' width={300} height={300} />
+      <Image className={styles.thumb} src={`/profile/${post.designer}/${index}/thumb.jpg`} alt='thumbnail' width={1000} height={1000} />
       <div className={styles.des}>
         <h2 className={styles.title}>{post.title}</h2>
         <h3 className={styles.designer}>{graduate[post.designer].name}</h3>

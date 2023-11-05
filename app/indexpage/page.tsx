@@ -60,9 +60,29 @@ export default function Profile() {
           </div>
         </div>
         <div className={`${styles.searchwrap} ${search ? styles.active : null}`}>
-          <img className={`${styles.search} ${search ? styles.active : null}`} onClick={openSearch} src='./icons/Search.svg' alt='search' />
+          <button className={`${styles.search} ${search ? styles.active : null}`} onClick={openSearch}>
+            <div style={{
+              maskImage: "url('/icons/search.svg')",
+              maskSize: "24px",
+              WebkitMaskImage: "url('/icons/search.svg')",
+              WebkitMaskSize: "24px",
+              backgroundColor: "white",
+              width: "24px",
+              height: "24px"
+            }}/>
+          </button>
           <input className={`${search ? styles.active : null}`} value={searchValue} onChange={handlerSearchValue} type='text' />
-          <img className={`${styles.closer} ${search ? styles.active : null}`} onClick={openSearch} src='./icons/Close.svg' alt='close' />
+          <button className={`${styles.closer} ${search ? styles.active : null}`} onClick={openSearch}>
+            <div style={{
+              maskImage: "url('/icons/closer.svg')",
+              maskSize: "24px",
+              WebkitMaskImage: "url('/icons/closer.svg')",
+              WebkitMaskSize: "24px",
+              backgroundColor: "white",
+              width: "24px",
+              height: "24px"
+            }}/>
+          </button>
         </div>
       </div>
       <div className={styles.listbox}>

@@ -30,10 +30,18 @@ export default function ProjectIndex({ params }: { params: { index: string } }) 
         <div className={styles.markdown}>
           <Content components={{ ImageViewer, Book }} />
         </div>
-        <div className={styles.footer}>
-          <h2>{Designer} 학생의 더 많은 작품 보러가기</h2>
-          <Link href={`/indexpage/${post.designer}`}>보러가기</Link>
-        </div>
+        <Link href={`/indexpage/${post.designer}`} className={styles.footer}>
+          <h3>{Designer} 학생의 더 많은 작품 보러가기</h3>
+          <div style={{
+            maskImage: "url('/icons/arrow_right.svg')",
+            maskSize: "24px",
+            WebkitMaskImage: "url('/icons/arrow_right.svg')",
+            WebkitMaskSize: "24px",
+            backgroundColor: "white",
+            width: "24px",
+            height: "24px"
+          }} />
+        </Link>
       </div>
     </article>
   )
