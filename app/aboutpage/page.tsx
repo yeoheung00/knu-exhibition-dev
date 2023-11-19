@@ -37,7 +37,18 @@ export default function About() {
         </div>
       </div>
 
-      <Title title="졸업준비위원회 조직도"/>
+      <Title title="지도교수님" />
+      <div className={styles.prof}>
+        <h3>박유선</h3>
+        <h3>박태영</h3>
+        <h3>이동석</h3>
+        <h3>이정윤</h3>
+        <h3>김민정</h3>
+        <h3>김수희</h3>
+      </div>
+
+
+      <Title title="졸업준비위원회 조직도" />
       <div className={styles.teamwrap}>
         <div className={styles.team}>
           <h3>졸업준비위원회</h3>

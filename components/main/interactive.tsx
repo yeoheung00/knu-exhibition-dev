@@ -9,7 +9,7 @@ export default function Home() {
   const [windowResolution, setWindowResolution] = useState({ width: 0, height: 0 });
   const [segments, setSegments] = useState<{ top: number, left: number, direction: string }[][]>([]);
   const [big, setBig] = useState<{ x: number, y: number, size: number }[]>([]);
-  let side:boolean[][] = [];
+  let side: boolean[][] = [];
 
   useEffect(() => {
     setWindowResolution({ width: window.innerWidth, height: window.innerHeight - 60 });
@@ -125,14 +125,14 @@ export default function Home() {
   const [animation, setAnimation] = useState({ x: 0, y: 0, direction: '' });
   const [isClicked, setIsClicked] = useState(false);
   const [isMoved, setIsMoved] = useState(false);
-  const [prev, setPrev] = useState({x: -1, y: -1, direction: 'none'});
+  const [prev, setPrev] = useState({ x: -1, y: -1, direction: 'none' });
 
   const handlerMouseDown = (event: MouseEvent) => {
     const clickedX = Math.floor(event.clientX / (windowResolution.width / resolution.width));
-    const clickedY = Math.floor((event.clientY-60) / (windowResolution.height / resolution.height));
+    const clickedY = Math.floor((event.clientY - 60) / (windowResolution.height / resolution.height));
     const direction = Math.floor(Math.random() * 4);
     const directionData = ['up', 'down', 'right', 'left']
-    setPrev({x: clickedX, y: clickedY, direction: directionData[direction]});
+    setPrev({ x: clickedX, y: clickedY, direction: directionData[direction] });
     setIsClicked(true);
   }
 
@@ -140,15 +140,15 @@ export default function Home() {
   const handlerMouseMove = (event: MouseEvent) => {
     if (isClicked) {
       const movedX = Math.floor(event.clientX / (windowResolution.width / resolution.width));
-      const movedY = Math.floor((event.clientY-60) / (windowResolution.height / resolution.height));
-      if(movedX != prev.x || movedY != prev.y){
+      const movedY = Math.floor((event.clientY - 60) / (windowResolution.height / resolution.height));
+      if (movedX != prev.x || movedY != prev.y) {
         let direction = '';
-        if(movedX > prev.x) direction = 'right';
-        if(movedX < prev.x) direction = 'left';
-        if(movedY > prev.y) direction = 'down';
-        if(movedY < prev.y) direction = 'up';
-        setAnimation({x: prev.x, y: prev.y, direction: direction});
-        setPrev({x: movedX, y: movedY, direction: direction});
+        if (movedX > prev.x) direction = 'right';
+        if (movedX < prev.x) direction = 'left';
+        if (movedY > prev.y) direction = 'down';
+        if (movedY < prev.y) direction = 'up';
+        setAnimation({ x: prev.x, y: prev.y, direction: direction });
+        setPrev({ x: movedX, y: movedY, direction: direction });
         setIsMoved(true);
       } else {
         setIsMoved(false);
@@ -159,15 +159,84 @@ export default function Home() {
 
 
   const handlerMouseUp = (event: MouseEvent) => {
-    if(!isMoved){
+    if (!isMoved) {
       const clickedX = Math.floor(event.clientX / (windowResolution.width / resolution.width));
-      const clickedY = Math.floor((event.clientY-60) / (windowResolution.height / resolution.height));
-      setAnimation({x: clickedX, y: clickedY, direction: prev.direction});
+      const clickedY = Math.floor((event.clientY - 60) / (windowResolution.height / resolution.height));
+      setAnimation({ x: clickedX, y: clickedY, direction: prev.direction });
       setIsMoved(true);
-      setTimeout(()=>setIsMoved(false), 100);
+      setTimeout(() => setIsMoved(false), 100);
     }
     setIsClicked(false);
   }
+
+
+
+
+  const [coordinate, setCoordinate] = useState({ x: 0, y: 0 });
+
+  const touchStart = (event: TouchEvent) => {
+    // const clickedX = event.changedTouches[0].clientX / (windowResolution.width / resolution.width);
+    // const clickedY = event.changedTouches[0].clientY / (windowResolution.height / resolution.height);
+    // setCoordinate({ x: clickedX, y: clickedY });
+
+
+
+
+    const clickedX = Math.floor(event.changedTouches[0].clientX / (windowResolution.width / resolution.width));
+    const clickedY = Math.floor((event.changedTouches[0].clientY - 60) / (windowResolution.height / resolution.height));
+    const direction = Math.floor(Math.random() * 4);
+    const directionData = ['up', 'down', 'right', 'left']
+    setPrev({ x: clickedX, y: clickedY, direction: directionData[direction] });
+    setIsClicked(true);
+  }
+
+  const touchMove = (event: TouchEvent) => {
+    // const clickedX = event.changedTouches[0].clientX / (windowResolution.width / resolution.width);
+    // const clickedY = event.changedTouches[0].clientY / (windowResolution.height / resolution.height);
+    // setCoordinate({ x: clickedX, y: clickedY });
+
+
+
+
+    if (isClicked) {
+      const movedX = Math.floor(event.changedTouches[0].clientX / (windowResolution.width / resolution.width));
+      const movedY = Math.floor((event.changedTouches[0].clientY - 60) / (windowResolution.height / resolution.height));
+      if (movedX != prev.x || movedY != prev.y) {
+        let direction = '';
+        if (movedX > prev.x) direction = 'right';
+        if (movedX < prev.x) direction = 'left';
+        if (movedY > prev.y) direction = 'down';
+        if (movedY < prev.y) direction = 'up';
+        setAnimation({ x: prev.x, y: prev.y, direction: direction });
+        setPrev({ x: movedX, y: movedY, direction: direction });
+        setIsMoved(true);
+      } else {
+        setIsMoved(false);
+      }
+    }
+  }
+
+  const touchEnd = (event: TouchEvent) => {
+    // const clickedX = event.changedTouches[0].clientX / (windowResolution.width / resolution.width);
+    // const clickedY = event.changedTouches[0].clientY / (windowResolution.height / resolution.height);
+    // setCoordinate({ x: clickedX, y: clickedY });
+
+
+
+
+    if (!isMoved) {
+      const clickedX = Math.floor(event.changedTouches[0].clientX / (windowResolution.width / resolution.width));
+      const clickedY = Math.floor((event.changedTouches[0].clientY - 60) / (windowResolution.height / resolution.height));
+      setAnimation({ x: clickedX, y: clickedY, direction: prev.direction });
+      setIsMoved(true);
+      setTimeout(() => setIsMoved(false), 100);
+    }
+    setIsClicked(false);
+  }
+
+
+
+
 
   const [isRandom, setIsRandom] = useState(false);
   const [randomData, setRandomData] = useState({ x: 0, y: 0, direction: '' });
@@ -199,7 +268,7 @@ export default function Home() {
           )}
         </div>)
       }
-      <div className={styles.feedback} onMouseDown={handlerMouseDown} onMouseUp={handlerMouseUp} onMouseMove={handlerMouseMove} />
+      <div className={styles.feedback} onMouseDown={handlerMouseDown} onMouseUp={handlerMouseUp} onMouseMove={handlerMouseMove} onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd} />
     </main>
   )
 }

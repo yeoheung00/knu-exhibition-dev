@@ -30,7 +30,7 @@ export default function ProjectIndex({ params }: { params: { index: string } }) 
         <div className={styles.markdown}>
           <Content components={{ ImageViewer, Book }} />
         </div>
-        <Link href={`/indexpage/${post.designer}`} className={styles.footer}>
+        <Link href={`/profilepage/${post.designer}`} className={styles.footer}>
           <h3>{Designer} 학생의 더 많은 작품 보러가기</h3>
           <div style={{
             maskImage: "url('/icons/arrow_right.svg')",
