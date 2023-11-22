@@ -3,6 +3,7 @@ import { allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import ImageViewer from '@/components/mdx/ImageViewer'
 import Book from '@/components/mdx/Book'
+import Video from '@/components/mdx/Video'
 import Link from 'next/link'
 import graduate from 'db/graduate.json'
 
@@ -28,7 +29,7 @@ export default function ProjectIndex({ params }: { params: { index: string } }) 
 
         </div>
         <div className={styles.markdown}>
-          <Content components={{ ImageViewer, Book }} />
+          <Content components={{ ImageViewer, Book, Video }} />
         </div>
         <Link href={`/profilepage/${post.designer}`} className={styles.footer}>
           <h3>{Designer} 학생의 더 많은 작품 보러가기</h3>

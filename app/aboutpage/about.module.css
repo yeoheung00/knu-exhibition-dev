@@ -58,8 +58,7 @@
   .team {
     width: calc((100% - 20px) / 2);
     padding: 20px;
-    background-color: var(--main-glassy);
-    border-radius: 16px;
+    border-top: 2px solid var(--main);
     display: flex;
     flex-direction: column;
     gap: 20px;

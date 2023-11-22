@@ -6,8 +6,7 @@
   font-family: 'SUIT Variable';
 }
 
-html,
-body {
+html {
   max-width: 100vw;
   --main: #143FE5;
   --main-glassy: #e7eaf6;

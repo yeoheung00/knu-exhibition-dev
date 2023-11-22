@@ -13,9 +13,9 @@ export default function Item({ id, name, nameEng, email }: itemProps) {
     <Link href={`/profilepage/${id}`} className={styles.root}>
       <div className={styles.namewrap}>
         <h3 className={styles.name}>{name}</h3>
-        <h3 className={styles.name}>{nameEng}</h3>
+        <h3 className={styles.nameEng}>{nameEng}</h3>
       </div>
-      <div className={styles.contact}>
+      {/* <div className={styles.contact}>
         <div style={{
           maskImage: "url('/icons/email.svg')",
           WebkitMaskImage: "url('/icons/email.svg')",
@@ -24,7 +24,7 @@ export default function Item({ id, name, nameEng, email }: itemProps) {
           backgroundColor: 'var(--accent)'
         }} />
         <p>{email}</p>
-      </div>
+      </div> */}
 
     </Link>
   );

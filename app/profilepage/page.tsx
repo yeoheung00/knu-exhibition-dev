@@ -40,7 +40,7 @@ export default function Profile() {
   return (
     <div className={styles.root}>
       <div className={styles.controler}>
-        <h2 className={styles.title}>졸업자 명단</h2>
+        <h2 className={styles.title}></h2>
         <div className={`${styles.searchwrap} ${search ? styles.active : null}`}>
           <button className={`${styles.search} ${search ? styles.active : null}`} onClick={openSearch}>
             <div style={{
@@ -48,7 +48,7 @@ export default function Profile() {
               maskSize: "24px",
               WebkitMaskImage: "url('/icons/searching.svg')",
               WebkitMaskSize: "24px",
-              backgroundColor: "white",
+              backgroundColor: "var(--main)",
               width: "24px",
               height: "24px"
             }} />
@@ -60,7 +60,7 @@ export default function Profile() {
               maskSize: "24px",
               WebkitMaskImage: "url('/icons/closer.svg')",
               WebkitMaskSize: "24px",
-              backgroundColor: "white",
+              backgroundColor: "var(--main)",
               width: "24px",
               height: "24px"
             }} />
