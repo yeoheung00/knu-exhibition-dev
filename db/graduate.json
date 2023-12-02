@@ -6,7 +6,7 @@
     "insta": "none",
     "email": "spe8329@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg", "https://youtube.com/shorts/Ha6P9YLqpC0", "https://m.site.naver.com/1giVM"]
   },
   {
     "id": 1,
@@ -14,8 +14,8 @@
     "name_eng": "Gu Jinuk",
     "insta": "none",
     "email": "Hotswell@hotswell.zz.am",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "충남산업디자인대전 입상"
+    "des": "안녕하세요, 구진욱입니다. 저는  사람들에게 즐거움을 주는 디자인을 하고 싶습니다. 단지 접할때 재미있을 뿐만 아니라, 기억에 남고 삶에 남아 즐거움을 남기는 디자인을 하고 싶습니다.",
+    "link": ["#01.jpg"]
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "insta": "none",
     "email": "eoddl_20@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "insta": "none",
     "email": "dowonkim99@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg", "https://youtu.be/xm5qdIT3dqo", "https://youtu.be/OlgU_9XqEbs"]
   },
   {
     "id": 4,
@@ -42,7 +42,7 @@
     "insta": "none",
     "email": "vmtlzp_p@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 5,
@@ -51,7 +51,7 @@
     "insta": "none",
     "email": "rlatjswn0611@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg", "https://m.site.naver.com/1giVJ", "https://m.site.naver.com/1giVN"]
   },
   {
     "id": 6,
@@ -60,7 +60,7 @@
     "insta": "none",
     "email": "jiss0716@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 7,
@@ -68,8 +68,8 @@
     "name_eng": "Kim Ayeong",
     "insta": "none",
     "email": "ayeong3390@naver.com",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "충남산업디자인대전 특선|KPR 대학생 PR 아이디어 공모전 입선|윤디자인그룹 Typography Seoul 파트너즈 3기|스타트업 마케팅 프로젝트 3기"
+    "des": "그림 그리기에 소질이 없던 김아영은 어느덧 졸업을 앞두고 있습니다. 항상 표현하는 것에 서툴고, 제 작품을 다른 사람들에게 보여주는 것이 어려웠던 저에게 졸업전시회는 첫 도전이자 큰 용기였습니다. 4년 동안 수업을 들으면서 디자이너는 표현을 하는 직업이라고 느꼈습니다. 저는 저의 디자인들로 사람들에게 선한 영향력을 줄 수 있는 사람이 되고 싶습니다. 디자이너로써 저의 첫 단추를 같이 끼워주세요.",
+    "link": ["#01.jpg"]
   },
   {
     "id": 8,
@@ -77,8 +77,8 @@
     "name_eng": "Kim Wiseong",
     "insta": "none",
     "email": "asdasd00200@naver.com",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "충남산업디자인대전 특별상|한국제지연합회 '종이자원' 용어홍보 우승"
+    "des": "안녕하세요. 김위성입니다. 저는 평소 사람들에게 제가 느낀 감정, 이야기, 아주 사소한 것들 일지라도 들려주고 공감받는 '소통'을 좋아합니다. 하지만 제가 경험한 것들이기 때문에 나에겐 크게 다가왔을 무언가가, 이야기로 전달받는 상대방에겐 이러한 감정이 와닿지 않는 경우가 많았습니다. 이런 저에게 디자인은 나와 상대방의 감정을 연결시켜 주는 매개체로 보였습니다. 저의 작품들을 통해 저의 이야기를 여러분들에게 전해주고 싶습니다. 다소 심오해 보이는 저의 졸업 작품들은 제가 느꼈던 이야기를 담고 있으며, 사람들이 느끼는 '감정'을 주제로 두었습니다. 제가 느꼈을 감정에 귀 기울여 작품을 감상해 주세요.",
+    "link": ["#01.jpg"]
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "insta": "none",
     "email": "alsrudals119@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg", "https://youtu.be/fG1LSaJC-gs?si=Xps1fgiJlWieQlKl", "https://youtu.be/-EOP2EqKFqg"]
   },
   {
     "id": 10,
@@ -96,8 +96,7 @@
     "insta": "@min_k_333",
     "email": "yeoheung27@gmail.com",
     "des": "본래 컴퓨터공학을 희망했으나 프로그램의 비주얼적인 요소 UI/UX에 대해 배우고 싶어서 시각디자인을 전공했습니다. 예상과 다르게 포장디자인, 광고디자인 등 다른 분야에 대해서도 많이 배웠으나 배우고 싶었던 UI/UX에 대해서도 좋은 경험이 되었습니다. 이번 졸업전시를 진행하며 온라인 전시를 직접 개발해 보는 등 실제로 배웠던 것을 적용해보는 좋은 경험도 할 수 있었습니다. 앞으로도 UI/UX를 활용한 웹/앱 디자이너이자 개발자가 되기 위해 노력하겠습니다.",
-    "awards": "충남산업디자인대전 특선",
-    "image": 1
+    "link": ["#01.jpg"]
   },
   {
     "id": 11,
@@ -106,7 +105,7 @@
     "insta": "none",
     "email": "mku3351@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 12,
@@ -114,8 +113,8 @@
     "name_eng": "Park Wooyeong",
     "insta": "none",
     "email": "hor135624@naver.com",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "des": "안녕하세요. 박우영입니다. 이번 작품들에 저의 가치관과 철학들을 많이 담아내려고 노력했습니다. 부디 즐거운 관람 되시길 바랍니다.",
+    "link": ["#01.jpg"]
   },
   {
     "id": 13,
@@ -123,8 +122,8 @@
     "name_eng": "Park Jihoon",
     "insta": "none",
     "email": "tim189189@gmail.com",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "지성아이엔씨 디자인 공모전 우승|현대 산업 디자인 대상전 입선|2019 소방산업 우수 디자인 특선"
+    "des": "안녕하세요. 박지훈입니다.",
+    "link": ["#01.jpg", "https://youtu.be/VLnDUkZthys", "https://youtube.com/shorts/wG3f55wfNl4"]
   },
   {
     "id": 14,
@@ -133,7 +132,7 @@
     "insta": "none",
     "email": "bee0329@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 15,
@@ -142,7 +141,7 @@
     "insta": "none",
     "email": "seogyeong0906@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "2022 유니버설디자인공모전 특선|롯데 칠성 굿즈 디자인 공모전 대상"
+    "link": ["#01.jpg", "https://youtu.be/3c2DcJxaXYM", "https://youtu.be/aoIOkTcThtI"]
   },
   {
     "id": 16,
@@ -151,7 +150,7 @@
     "insta": "none",
     "email": "",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 17,
@@ -160,7 +159,7 @@
     "insta": "none",
     "email": "worworrnfl@naver.com",
     "des": "저는 이번 디자인컨버전스 졸업전시에 참여한 18학번 윤규찬입니다. 저는 디자인이 싫습니다. 정확히는 제가 만들어낸 디자인들이 싫습니다. 학교를 다니며 만든 제 디자인들은 천부적인 감각, 툴을 다루는 능력 그리고 디자인적인 재능없이 여기까지만 해도 괜찮다고 타협 해오며 만들어낸 아무런 감동도 영혼도 없는 픽셀과 벡터의 흔적뿐이었습니다. 4학년이 되고 학교에서 내준 졸전이라는 마지막 과제는 적어도 스스로 하고싶은 디자인과 작품을 만들자고 마음을 먹었습니다. 억지로 키보드와 마우스를 잡으며 참아왔던 제 손그림들을 자유롭게 그려보았고 만족스러운 작품들이 나왔습니다. 아름답거나 디자인적인 구조가 완벽해서가 아니라 영혼을 담은 작업은 학교를 다니며 이번이 처음이자 마지막이기 때문이었습니다. 졸전을 보러 오시는 분들이 제 작업들을 어떻게 평가할지는 아직 모르겠지만 그 결과가 어떻든 저는 제 작업들을 사랑할 것이고 그 마음이 모든 관객분들에게 닿기를 바랍니다.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 18,
@@ -171,7 +170,7 @@
     "major": "제품",
     "work": "none",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg", "https://youtu.be/NXvW-6EhinU", "https://youtu.be/xGhbiGhqqn0"]
   },
   {
     "id": 19,
@@ -180,7 +179,7 @@
     "insta": "none",
     "email": "5688018@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 20,
@@ -189,7 +188,7 @@
     "insta": "none",
     "email": "ldy010423@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 21,
@@ -198,8 +197,7 @@
     "insta": "none",
     "email": "awwppyy@gmail.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "윤디자인그룹 Typography Seoul 파트너즈 3기|KTNG 상상uinv 대전광역시 대학생 시정홍보단(대전지역 홍보영상)|제로나인즈 소상공인협동조합브랜드 강화사업 참여(브랜딩)|대전지역인적자원개발원위원회 2021 광고영상아카데미&아레나 수료(대전기업 홍보영상)|충남산업디자인대전 특별상|대전디자인 공모전(브랜딩) 입상|대전디자인 공모전(홍보영상) 입상",
-    "image": 3
+    "link": ["#01.jpg"]
   },
   {
     "id": 22,
@@ -207,8 +205,8 @@
     "name_eng": "Lee Eunseo",
     "insta": "none",
     "email": "yeetr567@naver.com",
-    "des": "저는 20학번 이은서입니다. 이번 졸전을 준비하면서 졸업만 하자는 마음가짐으로 대했지만, 이토록 무언가를 장기간 붙잡고 노력한 적이 있었나 고민했습니다. 잠을 줄이며 몰두했고 결국 완성하니 뿌듯한 마음은 잠시 해냈다는 마음이 먼저 와 닿았습니다. 많은 부족한 면이 있고 앞으로도 많이 부족한 모습을 보이겠지만 살아가며 더 가꾸고 노력하는 모습을 보이겠습니다.",
-    "awards": ""
+    "des": "저는 20학번 이은서입니다. 이번 졸전을 준비하면서 졸업만 하자는 마음가짐으로 대했지만, 이토록 무언가를 장기간 붙잡고 노력한 적이 있었나 고민했습니다. 잠을 줄이며 몰두했고 결국 완성하니 뿌듯한 마음은 잠시 해냈다는 마음이 먼저 와 닿았습니다. 많은 부족한 면이 있고 앞으로도 많이 부족한 모습을 보이겠지만 살아가며 더 가꾸고 뿌듯한 마음을 오래 느낄 수 있도록 노력하는 모습을 보이겠습니다.",
+    "link": ["#01.jpg"]
   },
   {
     "id": 23,
@@ -216,8 +214,8 @@
     "name_eng": "Lee Eunhye",
     "insta": "none",
     "email": "1901871@naver.com",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "des": "안녕하세요. 이은혜입니다. 우선 온라인 졸업 전시를 보러 와주셔서 감사합니다. 스물, 대학에 입학했을 때부터 졸업 전시는 내가 좋아하는 것들을 주제로 하고 싶다고 생각했습니다. 스물넷, 그 소망을 이룬 지금 여러분께 제가 좋아하는 것들을 소개합니다. 중학생 때부터 좋아한 트로이 시반의 노래를 주제로 포스터를 만들었고, 스무 살에 생일 선물로 받은 후 관심을 가진 향수를 주제로 브랜딩을 했습니다. 그리고 올해부터 좋아하게 된 색인 초록색을 주제로 한 앱을 디자인했습니다. 차곡차곡 쌓인 저의 취향들을 이렇게 보여줄 수 있게 되어 영광입니다. 저의 취향을 여러분도 함께 즐길 수 있었으면 좋겠습니다. 그리고 앞으로 더 쌓일 저의 취향도 기대하게 되셨으면 좋겠습니다.",
+    "link": ["#01.jpg"]
   },
   {
     "id": 24,
@@ -225,8 +223,8 @@
     "name_eng": "Lee Jeongmi",
     "insta": "none",
     "email": "dlwjdal1222@naver.com",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "des": "정미입니다. 여태껏, 나 스스로가 사랑을 하기 위해 태어난 사람이라고 생각했어요. 지금도 여전히 그렇게 생각하고요. 그래서 그냥 제 디자인에서도 저의 사랑이 보였으면 좋겠어요.",
+    "link": ["#01.jpg"]
   },
   {
     "id": 25,
@@ -235,7 +233,7 @@
     "insta": "none",
     "email": "2jwjw22@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "충남산업디자인대전 우수상"
+    "link": ["#01.jpg"]
   },
   {
     "id": 26,
@@ -243,8 +241,8 @@
     "name_eng": "Lee Haeji",
     "insta": "none",
     "email": "haileylee99@gmail.com",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "des": "18학번 이해지입니다. 신입생 때 적성에 안맞다고 생각해 휴학도 했고, 학교를 다니는 기간 반 이상은 적성에 맞지 않다고 생각하며 지냈던 것 같습니다. 그러던 중, 제 인생에서 아주 큰 전환점이 된 2022년에 교환학생으로 있는 동안 다양한 나라의 사람들과 소통하며 진짜 '나'를 찾는 시간을 가지고 돌아왔습니다. 그 기간 동안 당연히 졸업 전시회에 대해 생각도 하게 되었습니다. 그리고 항상 졸업 전시회에는 제가 좋아하는 것들로 채워보고 싶다고 생각해왔습니다. 제가 좋아하는 건 세븐틴, 그리고 산리오의 마이멜로디같은 팬시 캐릭터들 입니다. 내가 좋아하는 거 라면 즐겁게 작업할 수 있겠다는 생각으로 시작하게 되었습니다. 여러분들도 본인이 좋아하는 것이 뭔지, 무엇이 하고 싶은지 되돌아 보는 시간을 꼭 가져보길 바랍니다.",
+    "link": ["#01.jpg"]
   },
   {
     "id": 27,
@@ -253,7 +251,7 @@
     "insta": "none",
     "email": "luckeys@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg", "https://youtu.be/bLgU-ZFPlfk?si=otCQrZiHFXa8Ledq", "https://youtube.com/shorts/8FsSXeFNofQ?feature=share"]
   },
   {
     "id": 28,
@@ -262,7 +260,7 @@
     "insta": "none",
     "email": "ghi010327@gmail.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "Korea Design Membership 3기|SPARK DESIGN AWARDS Finalist|D2B디자인페어 동상|현대산업디자인대상전 장려상|국립공원 캐릭터 상품 공모전 대상"
+    "link": ["#01.jpg"]
   },
   {
     "id": 29,
@@ -271,7 +269,7 @@
     "insta": "none",
     "email": "yonhiro6567@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg", "https://youtu.be/8TMvBTMbDh8", "https://youtu.be/e7LFsEcsnrg"]
   },
   {
     "id": 30,
@@ -280,7 +278,7 @@
     "insta": "none",
     "email": "lyzlyz513@gmail.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "2021 소방산업 우수 디자인 특선|유니스트 전국 대학생 창의 디자인-공학 경진대회 학과장상|크레모아 아웃트로 디자인 공모전 브론즈|창의 아이디어 발명 디자인 경진 대회 입상|대전디자인 공모전 (제품디자인) 입상-1|대전디자인 공모전 (제품디자인) 입상-2|대전디자인 공모전 (공공 / 환경디자인) 입상|현대 산업 디자인 대상전 입상|강원 디자인 공모전 (제품) 입상|KT&G 상상마케팅 디자인 스쿨 16기"
+    "link": ["#01.jpg", "https://m.site.naver.com/1giVt"]
   },
   {
     "id": 31,
@@ -288,8 +286,8 @@
     "name_eng": "Jeong Boyoung",
     "insta": "none",
     "email": "bbzoo@naver.com",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "2021 소방산업 우수 디자인 특선|창의 아이디어 발명 디자인 경진 대회 특상|한자 디자인 컨텐츠 공모전 장려상|충북 현대 산업디자인대상전 입선"
+    "des": "안녕하세요, 정보영입니다. 대학에 와서 관심분야인 디자인을 전문적으로 배울 수 있었고 다양한 사람들과 상황들을 접할 수 있었습니다. 휴학도 해보고 체코로 교환학생도 다녀오고 좋은 동기들, 선후배들과 즐거운 시간도 보냈습니다. 다사다난했던 4년간의 대학 생활을 마무리할 때라는 사실이 무척 아쉽습니다. 하지만 한편으로는 독립적인 사회인으로서의 새로운 삶을 시작할 생각에 설레기도 합니다. 제가 사회로 나아가 디자이너라는 직업을 갖게 된다면 사람들에게 행복과 호감을 주는 디자인을 하고 싶습니다. 제 노력이 누군가에게 활력과 기쁨을 준다면 그 자체가 저에게 큰 원동력이 될 것입니다. 이번 졸업 전시에서도 구경하시며 잠시나마 미소 지으시라고 귀여운 애견용품을 준비해 보았습니다. 제 작품이 누군가에게 5초라도 긍정적인 기분을 제공해 줄 수 있다면 저는 만족스러울 것입니다. 감사합니다 :)",
+    "link": ["#01.jpg", "https://youtu.be/8sWk79MO6gk"]
   },
   {
     "id": 32,
@@ -298,7 +296,7 @@
     "insta": "none",
     "email": "hmj9478@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg", "https://www.youtube.com/watch?v=lNALtYO1IMI"]
   },
   {
     "id": 33,
@@ -307,7 +305,7 @@
     "insta": "none",
     "email": "liz2773@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 34,
@@ -316,7 +314,7 @@
     "insta": "none",
     "email": "jeehj99@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg", "https://youtu.be/UZlhToFOguM", "https://youtube.com/shorts/ltICWrhJuTA"]
   },
   {
     "id": 35,
@@ -324,8 +322,8 @@
     "name_eng": "Cheon Yeeun",
     "insta": "none",
     "email": "cake0607@naver.com",
-    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "des": "천예은입니다. 중학생이 된 이후부터 제 장래희망은 줄곧 디자이너였습니다. 저는 예쁘고 아름다운 것들을 좋아해요. 그래서 '내가 직접 예쁜것들을 많이 만들어야지!'란 생각을 가지고 시작한 제품 디자인이었습니다. 물론 아무것도 모르던 제가 하던 상상과는 다른 현실에 고민도 많았지만 전시를 준비하면서 꼭 제품 디자인이 아니더라도 결국 제가 할 일은 디자인이라는걸 다시한번 느꼈어요. 저는 이 일을 할때 행복하니까요. 글을 보면 글쓴이의 의도가  보이고, 표정과 말투에서 사람의 기분이 보이는 것처럼 디자인도 마찬가지라고 생각합니다. 저는 제가 느끼는 좋은 생각과 감정들을 다른 사람들에게 나누어 줄 수있는 디자이너가 되고 싶습니다.",
+    "link": ["#01.jpg", "https://youtu.be/BRsOGGCT4bU?feature=shared", "https://youtu.be/o5AI3y8Zhl8"]
   },
   {
     "id": 36,
@@ -334,7 +332,7 @@
     "insta": "none",
     "email": "dbfla2129@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": ""
+    "link": ["#01.jpg"]
   },
   {
     "id": 37,
@@ -343,7 +341,7 @@
     "insta": "none",
     "email": "jyo6631@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "충남산업디자인대전 입상"
+    "link": ["#01.jpg"]
   },
   {
     "id": 38,
@@ -352,6 +350,6 @@
     "insta": "none",
     "email": "chjjung1022@naver.com",
     "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "awards": "창의아이디어발명 디자인 경진대회 입선"
+    "link": ["#01.jpg"]
   }
 ]
