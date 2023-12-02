@@ -7,6 +7,11 @@
   overflow: hidden;
   padding-top: 48px;
   background-color: white;
+  overscroll-behavior: contain;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .row {
