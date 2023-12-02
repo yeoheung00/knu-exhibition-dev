@@ -39,22 +39,41 @@ export default function About() {
         </div>
 
         <Title title="지도교수님" />
-        <div className={styles.prof}>
-          <h3>박유선</h3>
-          <h3>박태영</h3>
-          <h3>이동석</h3>
-          <h3>이정윤</h3>
-          <h3>김민정</h3>
-          <h3>김수희</h3>
+        <div className={styles.profwrap}>
+          <div className={styles.prof}>
+            <h2>박유선 교수</h2>
+            <h3>비쥬얼 디자인 프로젝트</h3>
+            <p>가시적인 요소와 비가시적인 요소들을 통합적으로 기획할 수 있는 디자이너의 역할을 경험함으로써 감성적 커뮤니케이션의 중요성을 인식하고 적용하는데 그 목적을 둔 디자인 결과물입니다.</p> 
+          </div>
+          <div className={styles.prof}>
+            <h2>박태영 교수</h2>
+          </div>
+          <div className={styles.prof}>
+            <h2>이동석 교수</h2>
+          </div>
+          <div className={styles.prof}>
+            <h2>이정윤 교수</h2>
+            <h3>편집 디자인, 패키지 디자인</h3>
+          </div>
+          <div className={styles.prof}>
+            <h2>김민정 외래교수</h2>
+            <h3>광고 디자인</h3>
+            <p>광고디자인 수업은 본질적인 메시지 정보를 창의적인 디자인 요소로 시각화시키는 과정을 통해 효율적인 비주얼커뮤니케이션의 표현법을 연구하는 것을 목표로 합니다. 이를 위해 커뮤니케이션이론과 더불어 정보 가공과 통합의 제작과정을 익힙니다<div className=""></div></p>
+          </div>
+          <div className={styles.prof}>
+            <h2>김수희 외래교수</h2>
+            <h3>멀티미디어 디자인</h3>
+            <p>멀티미디어 디자인 수업은 창의적인 UX / UI 디자인을 하기위해 프로젝트의 목표설정부터 A to Z의 모든 과정중에 맞닥뜨리는 다양한 이슈들을 독창적인 디자인적 해결방안으로 풀어가며 최적의 사용자 경험을 디자인하게 됩니다.</p>
+          </div>
         </div>
 
 
         <Title title="졸업준비위원회 조직도" />
         <div className={styles.teamwrap}>
           <div className={styles.team}>
-            <h3>졸업준비위원회</h3>
+            <h2>졸업준비위원회</h2>
             <div className={styles.contents}>
-              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <p className={styles.partdes}>저희는 디자인 분야에서 새로운 도약을 이루고자 하는 학생들을 위해 모인 졸업준비위원회입니다. 저희의 목표는 졸업생들이 자신의 디자인 작품을 선보일 수 있는 기회를 제공하는 것뿐만 아니라, 그들의 역량과 노력을 인정받을 수 있는 기회를 마련하는 데 있습니다</p>
               <div className={styles.rolewrap}>
                 <div><p className={styles.role}>위원장</p><p className={styles.member}>김아영(시각)<br />임승태(제품)</p></div>
                 <div><p className={styles.role}>부위원장</p><p className={styles.member}>김민서(시각)<br />정한맘(제품)</p></div>
@@ -64,7 +83,7 @@ export default function About() {
             </div>
           </div>
           <div className={styles.team}>
-            <h3>도록</h3>
+            <h2>도록</h2>
             <div className={styles.contents}>
               <p className={styles.partdes}>도록팀은 각자의 개성과 이야기가 담긴 졸업작품들을 책으로 엮어 기록하는 팀입니다. 24년도 졸업생들이 디자인컨버전스학과에서의 배움을 끝마치며 완성해낸 작품들을 엮어 도록을 제작하였습니다</p>
               <div className={styles.rolewrap}>
@@ -74,7 +93,7 @@ export default function About() {
             </div>
           </div>
           <div className={styles.team}>
-            <h3>영상</h3>
+            <h2>영상</h2>
             <div className={styles.contents}>
               <p className={styles.partdes}>우리의 전시를 미디어를 통해 보여주며 PIECE OF CAKE가 가지고 있는 이야기를 여러분들께 보다 빠르게 전달하고자 홍보영상을 제작하였습니다.</p>
               <div className={styles.rolewrap}>
@@ -84,7 +103,7 @@ export default function About() {
             </div>
           </div>
           <div className={styles.team}>
-            <h3>웹</h3>
+            <h2>웹</h2>
             <div className={styles.contents}>
               <p className={styles.partdes}>이번 디자인컨버전스 졸업생들의 4년간의 노력의 결실을 보여주는 졸업전시회에 오고싶었으나 부득이하게 오지 못하신 분들을 위하여 온라인으로 졸업생들의 작품을 감상하실 수 있게 온라인 전시를 준비했습니다.</p>
               <div className={styles.rolewrap}>
@@ -94,9 +113,9 @@ export default function About() {
             </div>
           </div>
           <div className={styles.team}>
-            <h3>인테리어</h3>
+            <h2>인테리어</h2>
             <div className={styles.contents}>
-              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <p className={styles.partdes}>이번 졸업전시회에서는 1차적으로 과목별로 공간을 구분하여 관람객들의 전시 이해도를 높이고, 학생들이 자신의 작품을 개성있게 표현하도록 개별 부스를 통해 공간을 구성했습니다.</p>
               <div className={styles.rolewrap}>
                 <div><p className={styles.role}>팀장</p><p className={styles.member}>천예은(제품)</p></div>
                 <div><p className={styles.role}>팀원</p><p className={styles.member}>김다영(시각)<br />유지우(시각)<br />윤규찬(시각)<br />이은서(제품)<br />이현송(제품)<br />임가현(제품)<br />최은정(시각)</p></div>
@@ -104,7 +123,7 @@ export default function About() {
             </div>
           </div>
           <div className={styles.team}>
-            <h3>포스터</h3>
+            <h2>포스터</h2>
             <div className={styles.contents}>
               <p className={styles.partdes}>디자인컨버전스학과의 첫 졸업전시인 만큼 저희 졸업전시 주제인 'piece of cake'에 맞춰 졸업전시의 축하와 컨버전스의 결합 그리고 융합의 의미가 담긴 시각적인 그래픽'cake'를 넣은 포스터를 제작하였습니다.</p>
               <div className={styles.rolewrap}>
@@ -114,9 +133,9 @@ export default function About() {
             </div>
           </div>
           <div className={styles.team}>
-            <h3>홍보</h3>
+            <h2>홍보</h2>
             <div className={styles.contents}>
-              <p className={styles.partdes}>꽃이 천자만홍이 인간이 그것은 얼마나 낙원을 많이 눈이 사막이다. 얼마나 같이, 그들의 내는 하는 이상을 청춘이 같으며, 스며들어 사막이다. 이성은 속잎나고, 열락의 그들은 것이다.</p>
+              <p className={styles.partdes}>홍보팀은 SNS를통해 여러분들께 아름다운 순간들을 전달하고, 우리만의 아이덴티티가 들어간 굿즈들로 이번 졸업전시회를 더욱 특별하게 만들어냅니다.</p>
               <div className={styles.rolewrap}>
                 <div><p className={styles.role}>팀장</p><p className={styles.member}>박우영(시각)</p></div>
                 <div><p className={styles.role}>팀원</p><p className={styles.member}>강연우(제품)<br />김선주(제품)<br />박지훈(제품)<br />서경원(제품)<br />임연주(제품)<br />정보영(제품)</p></div>
@@ -129,11 +148,11 @@ export default function About() {
         <div className={styles.offline}>
           <div className={styles.infowrap}>
             <div className={styles.info}>
-              <h3>일시</h3>
+              <h2>일시</h2>
               <p>2023. 12. 7. ~<br />2023. 12. 12.</p>
             </div>
             <div className={styles.info}>
-              <h3>장소</h3>
+              <h2>장소</h2>
               <p>충청남도 천안시 천안대로 1223-24<br />국립공주대학교 천안캠퍼스 10공학관 1층</p>
             </div>
           </div>

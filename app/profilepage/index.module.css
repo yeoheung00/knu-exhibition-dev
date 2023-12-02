@@ -52,7 +52,7 @@
 
 .searchlabel {
   position: absolute;
-  left: 6px;
+  left: 0;
   top: 0;
   margin: 7px;
   mask-image: url('/icons/searching.svg');
