@@ -55,7 +55,7 @@ export default function Header() {
             maskSize: '24px',
             WebkitMaskImage: 'url("/icons/closer.svg")',
             WebkitMaskSize: '24px',
-            backgroundColor: '#ffffff',
+            backgroundColor: 'var(--main)',
             width: '24px',
             height: '24px'
           }} />
