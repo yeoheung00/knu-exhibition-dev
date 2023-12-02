@@ -63,8 +63,8 @@ export default function Header() {
 
         <ul>
           <li className={`${pathname == "aboutpage" ? styles.current : null}`}><Link onClick={close} href="/aboutpage">ABOUT</Link></li>
-          <li className={`${pathname == "indexpage" ? styles.current : null}`}><Link onClick={close} href="/profilepage">PROFILE</Link></li>
-          <li className={`${pathname == "projectpage" ? styles.current : null}`}><Link onClick={close} href="/projectpage">PROJECT</Link></li>
+          <li className={`${pathname == "profilepage" ? styles.current : null}`}><Link onClick={close} href="/profilepage">PROFILE</Link></li>
+          {/* <li className={`${pathname == "projectpage" ? styles.current : null}`}><Link onClick={close} href="/projectpage">PROJECT</Link></li> */}
           <li><Link className={styles.sns} href='https://www.instagram.com/knu_piece_of_cake/' target="_blank"><div style={{
             maskImage: 'url("/icons/insta.svg")',
             maskSize: '24px',

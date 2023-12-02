@@ -6,9 +6,11 @@ import WorkItem from '@/components/workItem';
 export default function Page({ params }: { params: { id: number } }) {
   const { id } = params;
   const posts = allPosts.filter((item) => item.designer == id ? item : null);
+  const images = new Array(db[id].image).fill(0).map((item, idx) => (idx + 1).toString().padStart(2, '0') + '.jpg');
   return (
     <main className={styles.root}>
-      <div className={styles.image}>
+      <div className={styles.profilewrap}>
+        <div className={styles.image}>
         <img src={`/profile/${id}/profile.jpg`} alt='cake' />
       </div>
       <div className={styles.container}>
@@ -39,6 +41,16 @@ export default function Page({ params }: { params: { id: number } }) {
             }
           </div>
         </div>
+      </div>
+      </div>
+      
+
+      <div className={styles.images}>
+        {
+          images.map((item, idx) => (
+            <img key={idx} src={`/profile/${id}/${item}`} alt={item} />
+          ))
+        }
       </div>
     </main>
   )
