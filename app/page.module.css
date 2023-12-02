@@ -1,11 +1,24 @@
-.root {
-  overflow: hidden;
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  padding-top: 48px;
+  background-color: white;
+}
 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: relative;
+.row {
+  display: flex;
+  gap: 0px;
+}
+
+.feedback {
+  width: 100%;
+  height: calc(100vh - 48px);
+  position: fixed;
+  top: 48px;
+  left: 0;
+  z-index: 2222;
 }

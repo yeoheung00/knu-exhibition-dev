@@ -9,6 +9,7 @@ export const Post = defineDocumentType(() => ({
     title: { type: 'string', required: true },
     designer: { type: 'number', required: true },
     category: { type: 'string', required: true },
+    image: { type: 'number', required: true }
   },
   computedFields: {
     url: { type: 'string', resolve: (post) => `/projectpage/${post._raw.flattenedPath}` },

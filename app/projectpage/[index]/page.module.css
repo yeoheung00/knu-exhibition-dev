@@ -25,6 +25,12 @@
   margin: 10px 0;
 }
 
+.images img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .footer {
   margin-top: 40px;
   background-color: white;
@@ -45,6 +51,7 @@
 
 .markdown>iframe {
   width: 100%;
+  display: block;
 }
 
 .markdown {
