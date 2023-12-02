@@ -1,4 +1,4 @@
-.root{
+.root {
   padding: 88px 20px;
   background-color: var(--main-glassy);
 }
@@ -8,7 +8,7 @@
   margin: auto;
 }
 
-.header{
+.header {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
@@ -21,11 +21,17 @@
 
 }
 
-.category{
+.category {
   margin: 10px 0;
 }
 
-.footer{
+.images img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
   margin-top: 40px;
   background-color: white;
   padding: 20px;
@@ -39,8 +45,13 @@
   text-decoration: none;
 }
 
-.footer:hover{
+.footer:hover {
   background-color: var(--main-hover);
+}
+
+.markdown>iframe {
+  width: 100%;
+  display: block;
 }
 
 .markdown {

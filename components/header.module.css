@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .root {
     overflow: hidden;
     position: fixed;
@@ -19,12 +19,12 @@
     padding: 8px;
   }
 
-  .title img{
+  .title img {
     height: 32px;
     width: auto;
   }
 
-  .nav ul{
+  .nav ul {
     display: flex;
     align-items: center;
   }
@@ -45,7 +45,7 @@
 
   }
 
-  .closer{
+  .closer {
     display: none;
   }
 
@@ -63,7 +63,19 @@
     height: 48px;
     padding: 12px;
   }
-  .sns div{
+
+  .nav .school {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+  }
+
+  .sns div {
+    background-color: var(--main);
+  }
+
+
+  .school div {
     background-color: var(--main);
   }
 }
@@ -91,12 +103,15 @@
   .title {
     height: 48px;
     flex: 1;
-    padding: 8px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
   }
 
-  .title img{
-    height: 32px;
-    width: auto;
+  .title img {
+    height: auto;
+    width: 90%;
+    max-width: 400px;
   }
 
   .nav {
@@ -110,8 +125,9 @@
     background-color: var(--main);
   }
 
-  .nav.active{
+  .nav.active {
     width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   }
 
 
@@ -133,7 +149,7 @@
     color: white;
   }
 
-  .nav li a{
+  .nav li a {
     text-decoration: none;
     color: white;
   }
@@ -145,7 +161,19 @@
     padding: 12px 0;
   }
 
-  .sns div{
+
+  .nav .school {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 10px 0;
+  }
+
+  .sns div {
+    background-color: white;
+  }
+
+  .school div {
     background-color: white;
   }
 
