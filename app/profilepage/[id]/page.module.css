@@ -86,67 +86,63 @@
     width: 100%;
     max-width: 1600px;
     height: auto;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
   }
 
 }
 
 
 @media screen and (max-width: 767px) {
+
   .root {
-    margin-top: 48px;
+    padding-top: 48px;
     width: 100%;
     height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .profilewrap{
+    margin: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    background-color: var(--main);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
   }
 
   .image {
     width: 100%;
-    height: auto;
-  }
-
-  .image img {
-    height: auto;
-    width: 100%;
-    display: block;
-  }
-
-  .container {
-
-    background-color: var(--main-glassy);
-  }
-
-  .profile {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    max-width: 1500px;
-    margin: auto;
-    padding: 20px;
-  }
-
-  .profile img {
-    width: 100%;
-    height: auto;
+    aspect-ratio: 3/4;
     object-fit: cover;
   }
 
-  .name {
-    color: var(--main);
-    font-weight: bolder;
-    font-size: xx-large;
-  }
-
-  .contactwrap {
+  .container {
+    max-width: 1000px;
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 50px;
-    margin: 10px 0;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    color: white;
   }
 
-  .contact {
+  .contentswrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contents{
+    border-left: 2px solid white;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contactitem {
     display: flex;
     gap: 5px;
     align-items: center;
@@ -156,7 +152,7 @@
     mask-image: url('/icons/instagram.svg');
     mask-size: 24px;
     mask-repeat: no-repeat;
-    background-color: var(--main);
+    background-color: white;
     width: 24px;
     height: 24px;
   }
@@ -165,43 +161,24 @@
     mask-image: url('/icons/email.svg');
     mask-size: 24px;
     mask-repeat: no-repeat;
-    background-color: var(--main);
+    background-color: white;
     width: 24px;
     height: 24px;
   }
 
-  .major {
-    color: var(--accent);
-    font-weight: bold;
-    font-size: x-large;
-    margin-left: 20px;
-  }
-
-  .awardTitle {
-    margin-top: 20px;
-  }
-
-  .awards li {
-    margin: 8px 0;
-    margin-left: 20px;
-  }
-
-  .worktitle {
-    color: var(--main);
-    padding: 20px 20px 0px 20px;
-  }
-
-  .worklist {
-    width: 100%;
-    flex: 1;
-    padding: 20px;
-  }
-
-  .workwrap {
+  .images{
+    padding: 10px 10px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    background-color: var(--main-glassy);
+  }
+
+  .images img{
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
   }
 }

@@ -40,31 +40,9 @@ export default function Profile() {
   return (
     <div className={styles.root}>
       <div className={styles.controler}>
-        <h2 className={styles.title}></h2>
-        <div className={`${styles.searchwrap} ${search ? styles.active : null}`}>
-          <button className={`${styles.search} ${search ? styles.active : null}`} onClick={openSearch}>
-            <div style={{
-              maskImage: "url('/icons/searching.svg')",
-              maskSize: "24px",
-              WebkitMaskImage: "url('/icons/searching.svg')",
-              WebkitMaskSize: "24px",
-              backgroundColor: "var(--main)",
-              width: "24px",
-              height: "24px"
-            }} />
-          </button>
-          <input className={`${search ? styles.active : null}`} value={searchValue} onChange={handlerSearchValue} type='text' />
-          <button className={`${styles.closer} ${search ? styles.active : null}`} onClick={openSearch}>
-            <div style={{
-              maskImage: "url('/icons/closer.svg')",
-              maskSize: "24px",
-              WebkitMaskImage: "url('/icons/closer.svg')",
-              WebkitMaskSize: "24px",
-              backgroundColor: "var(--main)",
-              width: "24px",
-              height: "24px"
-            }} />
-          </button>
+        <div className={styles.searchwrap}>
+          <label className={styles.searchlabel} htmlFor="search"/>
+          <input id="search" className={styles.search} value={searchValue} onChange={handlerSearchValue} type='text' />
         </div>
       </div>
       <div className={styles.listbox}>

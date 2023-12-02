@@ -47,7 +47,7 @@ export default function Page({ params }: { params: { id: number } }) {
       <div className={styles.images}>
         {
           images.map((item, idx) => (
-            <Link href={db[id].link[idx]}>
+            <Link href={db[id].link[idx].startsWith("http") ? db[id].link[idx] : "/profilepage/"+id+db[id].link[idx]}>
               <img key={idx} id={item} src={`/profile/${id}/${item}`} alt={item} />
             </Link>
           ))
