@@ -19,7 +19,7 @@ export default function Page({ params }: { params: { id: number } }) {
             <h1>Designer</h1>
             <div className={styles.contents}>
               <h2 className={styles.name}>{db[id].name}<br />{db[id].name_eng}</h2>
-              <p>{db[id].des}</p>
+              <p dangerouslySetInnerHTML={{ __html: db[id].des }}></p>
             </div>
           </div>
 
