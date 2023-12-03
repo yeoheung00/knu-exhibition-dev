@@ -47,8 +47,17 @@ export default function Page({ params }: { params: { id: number } }) {
       <div className={styles.images}>
         {
           images.map((item, idx) => (
-            <Link href={db[id].link[idx].startsWith("http") ? db[id].link[idx] : "/profilepage/"+id+db[id].link[idx]}>
-              <img key={idx} id={item} src={`/profile/${id}/${item}`} alt={item} />
+            <Link key={idx} href={db[id].link[idx].startsWith("http") ? db[id].link[idx] : "/profilepage/"+id+db[id].link[idx]} style={{position: "relative"}}>
+              <img id={item} src={`/profile/${id}/${item}`} alt={item} />
+              <img src="/play.png" style={{
+                width: "12%",
+                aspectRatio: "1/1",
+                position: "absolute",
+                left: "50%",
+                top: "50%",
+                transform: "translate(-50%, -50%)",
+                display: db[id].link[idx].startsWith("http") ? "block" : "none"
+              }}/>
             </Link>
           ))
         }

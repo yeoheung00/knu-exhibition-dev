@@ -65,22 +65,24 @@ export default function Header() {
           <li className={`${pathname == "aboutpage" ? styles.current : null}`}><Link onClick={close} href="/aboutpage">ABOUT</Link></li>
           <li className={`${pathname == "profilepage" ? styles.current : null}`}><Link onClick={close} href="/profilepage">PROFILE</Link></li>
           {/* <li className={`${pathname == "projectpage" ? styles.current : null}`}><Link onClick={close} href="/projectpage">PROJECT</Link></li> */}
-          <li><Link className={styles.sns} href='https://www.instagram.com/knu_piece_of_cake/' target="_blank"><div style={{
-            maskImage: 'url("/icons/insta.svg")',
-            maskSize: '24px',
-            WebkitMaskImage: 'url("/icons/insta.svg")',
-            WebkitMaskSize: '24px',
-            width: '24px',
-            height: '24px'
-          }} /></Link></li>
-          <li><Link className={styles.school} href='https://design.kongju.ac.kr/' target="_blank"><div style={{
-            maskImage: 'url("/icons/kongju.svg")',
-            maskSize: '28px',
-            WebkitMaskImage: 'url("/icons/kongju.svg")',
-            WebkitMaskSize: '28px',
-            width: '28px',
-            height: '28px'
-          }} /></Link></li>
+          <li className={styles.goto}>
+            <Link className={styles.sns} href='https://www.instagram.com/knu_piece_of_cake/' target="_blank"><div style={{
+              maskImage: 'url("/icons/insta.svg")',
+              maskSize: '24px',
+              WebkitMaskImage: 'url("/icons/insta.svg")',
+              WebkitMaskSize: '24px',
+              width: '24px',
+              height: '24px'
+            }} /></Link>
+            <Link className={styles.school} href='https://design.kongju.ac.kr/' target="_blank"><div style={{
+              maskImage: 'url("/icons/kongju.svg")',
+              maskSize: '32px',
+              WebkitMaskImage: 'url("/icons/kongju2.svg")',
+              WebkitMaskSize: '32px',
+              width: '32px',
+              height: '32px'
+            }} /></Link>
+          </li>
         </ul>
       </nav>
 

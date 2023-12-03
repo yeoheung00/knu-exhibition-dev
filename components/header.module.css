@@ -58,6 +58,10 @@
     color: var(--accent) !important;
   }
 
+  .nav .goto{
+    display: flex;
+  }
+
   .nav .sns {
     width: 48px;
     height: 48px;
@@ -67,7 +71,7 @@
   .nav .school {
     width: 48px;
     height: 48px;
-    padding: 10px;
+    padding: 8px;
   }
 
   .sns div {
@@ -155,19 +159,25 @@
     color: var(--main);
   }
 
+  
+  .nav .goto{
+    display: flex;
+    flex-direction: column;
+  }
+
   .nav .sns {
     display: block;
-    width: 100%;
+    width: 48px;
     height: 48px;
-    padding: 12px 0;
+    padding: 12px;
   }
 
 
   .nav .school {
     display: block;
-    width: 100%;
+    width: 48px;
     height: 48px;
-    padding: 10px 0;
+    padding: 8px;
   }
 
   .sns div {
