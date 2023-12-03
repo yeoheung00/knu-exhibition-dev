@@ -23,6 +23,7 @@
     height: 70%;
     aspect-ratio: 3/4;
     object-fit: cover;
+    object-position: center top;
   }
 
   .container {
@@ -30,7 +31,7 @@
     max-width: 1000px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 60px;
     color: white;
   }
@@ -124,7 +125,7 @@
     max-width: 1000px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 20px;
     color: white;
   }
