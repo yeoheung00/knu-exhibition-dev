@@ -1,7 +1,6 @@
 import styles from './page.module.css'
 import db from 'db/graduate.json'
 import { allPosts } from 'contentlayer/generated'
-import WorkItem from '@/components/workItem';
 import Link from 'next/link';
 
 export default function Page({ params }: { params: { id: number } }) {
@@ -47,7 +46,7 @@ export default function Page({ params }: { params: { id: number } }) {
       <div className={styles.images}>
         {
           images.map((item, idx) => (
-            <Link key={idx} href={db[id].link[idx].startsWith("http") ? db[id].link[idx] : "/profilepage/"+id+db[id].link[idx]} style={{position: "relative"}}>
+            <Link key={idx} href={db[id].link[idx].startsWith("http") ? db[id].link[idx] : "/profilepage/"+id+db[id].link[idx]} target='_blank' style={{position: "relative", pointerEvents: db[id].link[idx].startsWith("http") ? "auto" : "none"}}>
               <img id={item} src={`/profile/${id}/${item}`} alt={item} />
               <img src="/play.png" style={{
                 width: "12%",
