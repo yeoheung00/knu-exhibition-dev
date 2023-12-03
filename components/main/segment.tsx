@@ -298,7 +298,10 @@ export default function Segment({ coordinate, windowResolution, resolution, posi
           position: "absolute",
           width: windowResolution.width / sizeResolution.width * 6 + "px",
           height: windowResolution.width / sizeResolution.width * 4 + "px",
-          transition: '0s'
+          transition: '0s',
+          userSelect: "none",
+          WebkitUserSelect: "none",
+          MozUserSelect: "none"
         }
       } />
     </div>

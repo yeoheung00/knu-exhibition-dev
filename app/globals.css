@@ -9,10 +9,6 @@
 :root {
   overflow: hidden;
   overscroll-behavior: contain;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 html {

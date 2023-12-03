@@ -43,28 +43,39 @@ export default function About() {
           <div className={styles.prof}>
             <h2>박유선 교수</h2>
             <h3>비쥬얼 디자인 프로젝트</h3>
-            <p>가시적인 요소와 비가시적인 요소들을 통합적으로 기획할 수 있는 디자이너의 역할을 경험함으로써 감성적 커뮤니케이션의 중요성을 인식하고 적용하는데 그 목적을 둔 디자인 결과물입니다.</p> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
           </div>
           <div className={styles.prof}>
             <h2>박태영 교수</h2>
+            <h3>제품디자인</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div className={styles.prof}>
+            <h2>원호연 교수</h2>
+            <h3>제품디자인</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className={styles.prof}>
             <h2>이동석 교수</h2>
+            <h3>제품디자인</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className={styles.prof}>
             <h2>이정윤 교수</h2>
             <h3>편집 디자인, 패키지 디자인</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className={styles.prof}>
             <h2>김민정 외래교수</h2>
             <h3>광고 디자인</h3>
-            <p>광고디자인 수업은 본질적인 메시지 정보를 창의적인 디자인 요소로 시각화시키는 과정을 통해 효율적인 비주얼커뮤니케이션의 표현법을 연구하는 것을 목표로 합니다. 이를 위해 커뮤니케이션이론과 더불어 정보 가공과 통합의 제작과정을 익힙니다<div className=""></div></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className={styles.prof}>
             <h2>김수희 외래교수</h2>
             <h3>멀티미디어 디자인</h3>
-            <p>멀티미디어 디자인 수업은 창의적인 UX / UI 디자인을 하기위해 프로젝트의 목표설정부터 A to Z의 모든 과정중에 맞닥뜨리는 다양한 이슈들을 독창적인 디자인적 해결방안으로 풀어가며 최적의 사용자 경험을 디자인하게 됩니다.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
+          <div className={styles.profdummy}/>
         </div>
 
 
